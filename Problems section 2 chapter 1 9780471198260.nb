@@ -1,0 +1,3361 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    155072,       3353]
+NotebookOptionsPosition[    151863,       3286]
+NotebookOutlinePosition[    152309,       3303]
+CellTagsIndexPosition[    152266,       3300]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+In the following problems, find the limit of the given sequence as n\[Rule]\
+\[Infinity].\
+\>", "Text",
+ CellChangeTimes->{{3.8784840762414427`*^9, 
+  3.878484090430924*^9}},ExpressionUUID->"739a1749-f212-43af-99a6-\
+2ce2b014e310"],
+
+Cell[CellGroupData[{
+
+Cell["2.1", "Section",
+ CellChangeTimes->{{3.87848404182032*^9, 
+  3.878484042195319*^9}},ExpressionUUID->"1f56dc2c-3444-4fe5-99a8-\
+e8e2a6776d9c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["n", "2"], "+", 
+     RowBox[{"5", 
+      SuperscriptBox["n", "3"]}]}], 
+    RowBox[{
+     RowBox[{"2", 
+      SuperscriptBox["n", "3"]}], "+", 
+     RowBox[{"3", 
+      SqrtBox[
+       RowBox[{"4", "+", 
+        SuperscriptBox["n", "6"]}]]}]}]], ",", 
+   RowBox[{"n", "\[Rule]", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784840448710485`*^9, 3.878484067952982*^9}},
+ CellLabel->
+  "In[450]:=",ExpressionUUID->"3b624617-89ec-47d3-9365-1e9da990144b"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.8784840684217386`*^9},
+ CellLabel->
+  "Out[450]=",ExpressionUUID->"1d76c3b0-0d0d-48c9-a07a-155163f19939"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderscriptBox["\[Limit]", 
+   RowBox[{"n", "\[Rule]", "\[Infinity]"}]], 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["n", "2"], "+", 
+    RowBox[{"5", 
+     SuperscriptBox["n", "3"]}]}], 
+   RowBox[{
+    RowBox[{"2", 
+     SuperscriptBox["n", "3"]}], "+", 
+    RowBox[{"3", 
+     SqrtBox[
+      RowBox[{"4", "+", 
+       SuperscriptBox["n", "6"]}]]}]}]]}]], "Input",
+ CellChangeTimes->{3.878484176785013*^9},
+ CellLabel->
+  "In[454]:=",ExpressionUUID->"97381125-08d5-4231-a045-64b124e96f05"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.878484177378683*^9},
+ CellLabel->
+  "Out[454]=",ExpressionUUID->"00e35ae3-a73e-4215-9fd9-fc29a6886324"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "limit ",
+ Cell[BoxData[
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["n", "2"], "+", 
+    RowBox[{"5", 
+     SuperscriptBox["n", "3"]}]}], 
+   RowBox[{
+    RowBox[{"2", 
+     SuperscriptBox["n", "3"]}], "+", 
+    RowBox[{"3", 
+     SqrtBox[
+      RowBox[{"4", "+", 
+       SuperscriptBox["n", "6"]}]]}]}]]], "Input",
+  CellChangeTimes->{3.878484176785013*^9},ExpressionUUID->
+  "07f083bd-83f0-49cc-8559-9d454fd02116"],
+ " as n->infinity"
+}], "WolframAlphaLong",
+ CellChangeTimes->{{3.878484237493911*^9, 3.878484257271102*^9}, 
+   3.8784843119947667`*^9},
+ CellLabel->
+  "In[460]:=",ExpressionUUID->"3debb9b5-bf43-4a8c-80ea-732a6acec003"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = 
+   "limit (n^2 + 5 n^3)/(2 n^3 + 3 Sqrt[4 + n^6]) as n->infinity", 
+   Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}, 
+    PodStates -> {
+     "SeriesExpansionAtX=x0__More terms", "SeriesExpansionAtX=x0__More terms",
+       "Limit__Step-by-step solution"}}, Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Limit", "scanner" -> "Limit", "id" -> "Limit", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "2", "primary" -> 
+     "true"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {
+        "Limit[(n^2 + 5 n^3)/(2 n^3 + 3 Sqrt[4 + n^6]), n -> Infinity]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             RowBox[{
+               TemplateBox[{
+                 StyleBox[
+                  FractionBox[
+                   RowBox[{
+                    SuperscriptBox["n", "2"], "+", 
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}]}], 
+                   RowBox[{
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    RowBox[{"4", "+", 
+                    SuperscriptBox["n", "6"]}]]}]}]], ScriptLevel -> 0, 
+                  StripOnInput -> False], "n", "\[Infinity]"}, "Limit2Arg", 
+                SyntaxForm -> Limit, DisplayFunction -> (RowBox[{
+                   TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                InterpretationFunction -> (RowBox[{"Limit", "[", 
+                   RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], "\[LongEqual]", 
+               "1"}], HoldForm], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["subpod", {"title" -> "Possible intermediate steps"}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{"\"Find the following limit\""}, 
+                    "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    SuperscriptBox["n", "2"]}], HoldForm], 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}]}], 
+                    HoldForm]], "n", "\[Infinity]"}, "Limit2Arg", SyntaxForm -> 
+                    Limit, DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm]}, "RowDefault"], 
+                    HoldForm]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                  GridBoxSpacings -> {
+                   "Columns" -> {{None}}, "Rows" -> {{0.5}}}], "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    TemplateBox[{
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    SuperscriptBox["n", "2"]}], HoldForm], 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}]}], 
+                    HoldForm]], "\" \""}, "RowDefault"], "\"\[LongEqual] \"", 
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    SuperscriptBox["n", "2"]}], HoldForm], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"], " ", 
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm], 
+                    ")"}]}]]}, "RowDefault"]}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    SuperscriptBox["n", "2"]}], HoldForm], 
+                    FrameBox[
+                    RowBox[{"(", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"], " ", 
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm], 
+                    ")"}]}], ")"}], FrameStyle -> GrayLevel[0.8], 
+                    FrameMargins -> 1, BaselinePosition -> Baseline, 
+                    ContentPadding -> False, StripOnInput -> False]], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"By \"", "\"the \"", "\"product \"", 
+                    TemplateBox[{"\"rule,\\n\"", 
+                    TemplateBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    SuperscriptBox["n", "2"]}], HoldForm], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"], " ", 
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm], 
+                    ")"}]}]], "n", "\[Infinity]"}, "Limit2Arg", SyntaxForm -> 
+                    Limit, DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\" \""}, "RowDefault"], 
+                    "\"\[LongEqual] \"", 
+                    RowBox[{
+                    FractionBox["1", "2"], " ", 
+                    RowBox[{"(", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox["1", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm]], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], ")"}], " ", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    SuperscriptBox["n", "2"]}], HoldForm], 
+                    SuperscriptBox["n", "3"]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm]}]}, "RowDefault"]}, 
+                    "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    RowBox[{
+                    TagBox[
+                    FrameBox[
+                    FractionBox["1", "2"], FrameStyle -> GrayLevel[0.8], 
+                    FrameMargins -> 1, BaselinePosition -> Baseline, 
+                    ContentPadding -> False, StripOnInput -> False], 
+                    HoldForm], " ", 
+                    TagBox[
+                    FrameBox[
+                    RowBox[{"(", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    SuperscriptBox["n", "2"]}], HoldForm], 
+                    SuperscriptBox["n", "3"]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], ")"}], FrameStyle -> 
+                    GrayLevel[0.8], FrameMargins -> 1, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, StripOnInput -> False],
+                     HoldForm], " ", 
+                    TagBox[
+                    FrameBox[
+                    RowBox[{"(", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox["1", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm]], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], ")"}], FrameStyle -> 
+                    GrayLevel[0.8], FrameMargins -> 1, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, StripOnInput -> False],
+                     HoldForm]}], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{
+                    "\"The \"", "\"leading \"", "\"term \"", "\"in \"", 
+                    "\"the \"", "\"denominator \"", "\"of \"", 
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "3"]}], "+", 
+                    SuperscriptBox["n", "2"]}], HoldForm], 
+                    SuperscriptBox["n", "3"]], "\" \""}, "RowDefault"], 
+                    "\"is \"", 
+                    TemplateBox[{
+                    SuperscriptBox["n", "3"], "\".\"", "\" \""}, 
+                    "RowDefault"], "\"Divide \"", "\"the \"", 
+                    "\"numerator \"", "\"and \"", "\"denominator \"", 
+                    "\"by \"", "\"this\""}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox[
+                    FrameBox[
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{"5", "+", 
+                    FractionBox["1", "n"]}], HoldForm], "1"], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], FrameStyle -> 
+                    GrayLevel[0.8], FrameMargins -> 1, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, StripOnInput -> False],
+                     HoldForm], " ", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox["1", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm]], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"The \"", "\"expression \"", 
+                    TemplateBox[{
+                    FractionBox["1", "n"], "\" \""}, "RowDefault"], 
+                    "\"tends \"", "\"to \"", "\"zero \"", "\"as \"", 
+                    TemplateBox[{"n", "\" \""}, "RowDefault"], 
+                    "\"approaches \"", "\[Infinity]"}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox[
+                    FrameBox[
+                    "5", FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False], HoldForm], " ", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox["1", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm]], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{
+                    "\"Using \"", "\"the \"", "\"reciprocal \"", "\"rule, \"",
+                     "\"write \"", 
+                    TemplateBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox["1", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm]], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\" \""}, "RowDefault"], 
+                    "\"as \"", 
+                    FractionBox["1", 
+                    StyleBox[
+                    TemplateBox[{
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm], ")"}],
+                     "n", "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False]]}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox["5", HoldForm], " ", 
+                    TagBox[
+                    FrameBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    TagBox["1", HoldForm], 
+                    TagBox[
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm], ")"}],
+                     "n", "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], HoldForm]], ")"}], 
+                    FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    TemplateBox[{
+                    TemplateBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "+", "1"}], HoldForm], ")"}],
+                     "n", "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\" \""}, "RowDefault"], 
+                    "\"\[LongEqual] \"", 
+                    TagBox[
+                    RowBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "+", "1"}], HoldForm]}, 
+                    "RowDefault"]}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox["5", HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm], " ", 
+                    RowBox[{"(", 
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], "+", 
+                    TagBox[
+                    FrameBox[
+                    "1", FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False], HoldForm]}], HoldForm], 
+                    TraditionalForm], DisplayForm], ")"}]}]], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    TemplateBox[{
+                    TemplateBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    RowBox[{"3", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "3"]}]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\" \""}, "RowDefault"], 
+                    "\"\[LongEqual] \"", 
+                    RowBox[{
+                    FractionBox["3", "2"], " ", 
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]], 
+                    SuperscriptBox["n", "3"]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False]}]}, "RowDefault"]}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox["5", HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm], " ", 
+                    RowBox[{"(", 
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{
+                    TagBox[
+                    FrameBox[
+                    FractionBox["3", "2"], FrameStyle -> GrayLevel[0.8], 
+                    FrameMargins -> 1, BaselinePosition -> Baseline, 
+                    ContentPadding -> False, StripOnInput -> False], 
+                    HoldForm], " ", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]], 
+                    SuperscriptBox["n", "3"]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm]}], "+", "1"}], 
+                    HoldForm], TraditionalForm], DisplayForm], ")"}]}]], 
+                    HoldForm]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    TemplateBox[{
+                    TemplateBox[{
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm]], 
+                    SuperscriptBox["n", "3"]], "\" \""}, "RowDefault"], 
+                    "\"\[LongEqual] \"", 
+                    SqrtBox[
+                    TagBox[
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    SuperscriptBox["n", "6"]], HoldForm]]}, "RowDefault"]}, 
+                    "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox["5", HoldForm], " ", 
+                    TagBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox["1", HoldForm], 
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    TagBox["3", HoldForm], " ", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FrameBox[
+                    RowBox[{"(", 
+                    SqrtBox[
+                    TagBox[
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    SuperscriptBox["n", "6"]], HoldForm]], ")"}], FrameStyle -> 
+                    GrayLevel[0.8], FrameMargins -> 1, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, StripOnInput -> False],
+                     "n", "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), InterpretationFunction -> (
+                    RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], "+", "1"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}, 
+                    "RowDefault"], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    TemplateBox[{
+                    TemplateBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    SqrtBox[
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    SuperscriptBox["n", "6"]]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\" \""}, "RowDefault"], 
+                    "\"\[LongEqual] \"", 
+                    SqrtBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    SuperscriptBox["n", "6"]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False]]}, "RowDefault"]}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox["5", HoldForm], " ", 
+                    TagBox[
+                    FrameBox[
+                    RowBox[{"(", 
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox["1", HoldForm], 
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    TagBox["3", HoldForm], " ", 
+                    TagBox[
+                    SqrtBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    SuperscriptBox["n", "6"]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), InterpretationFunction -> (
+                    RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False]], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], "+", "1"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]]}, 
+                    "RowDefault"], ")"}], FrameStyle -> GrayLevel[0.8], 
+                    FrameMargins -> 1, BaselinePosition -> Baseline, 
+                    ContentPadding -> False, StripOnInput -> False], 
+                    HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{
+                    "\"The \"", "\"leading \"", "\"term \"", "\"in \"", 
+                    "\"the \"", "\"denominator \"", "\"of \"", 
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "6"], "+", "4"}], HoldForm], 
+                    SuperscriptBox["n", "6"]], "\" \""}, "RowDefault"], 
+                    "\"is \"", 
+                    TemplateBox[{
+                    SuperscriptBox["n", "6"], "\".\"", "\" \""}, 
+                    "RowDefault"], "\"Divide \"", "\"the \"", 
+                    "\"numerator \"", "\"and \"", "\"denominator \"", 
+                    "\"by \"", "\"this\""}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox["5", HoldForm], " ", 
+                    TagBox[
+                    FrameBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    TagBox["1", HoldForm], 
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    TagBox["3", HoldForm], " ", 
+                    TagBox[
+                    SqrtBox[
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{"1", "+", 
+                    FractionBox["4", 
+                    SuperscriptBox["n", "6"]]}], HoldForm], "1"], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), InterpretationFunction -> (
+                    RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm]], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], "+", "1"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]], ")"}], 
+                    FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"The \"", "\"expression \"", 
+                    TemplateBox[{
+                    FractionBox["4", 
+                    SuperscriptBox["n", "6"]], "\" \""}, "RowDefault"], 
+                    "\"tends \"", "\"to \"", "\"zero \"", "\"as \"", 
+                    TemplateBox[{"n", "\" \""}, "RowDefault"], 
+                    "\"approaches \"", "\[Infinity]"}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    TagBox["5", HoldForm], " ", 
+                    TagBox[
+                    FrameBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    TagBox["1", HoldForm], 
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    TagBox[
+                    SqrtBox["1"], HoldForm], 
+                    StyleBox["\[Times]", FontColor -> GrayLevel[0.3]], 
+                    TagBox["3", HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], "+", "1"}], HoldForm], 
+                    TraditionalForm], DisplayForm], HoldForm]], ")"}], 
+                    FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False], HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    RowBox[{
+                    TagBox[
+                    FractionBox["1", 
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    TagBox[
+                    TagBox["1", HoldForm], HoldForm]], 
+                    StyleBox["\[Times]", FontColor -> GrayLevel[0.3]], 
+                    TagBox["3", HoldForm]}], 
+                    RowBox[{
+                    TagBox["2", HoldForm]}]], "+", "1"}], HoldForm], 
+                    TraditionalForm], DisplayForm]], HoldForm], 
+                    "\[LongEqual]", 
+                    FractionBox["2", "5"]}]}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    RowBox[{
+                    FractionBox["1", 
+                    TagBox["2", HoldForm]], 
+                    StyleBox["\[Times]", FontColor -> GrayLevel[0.3]], 
+                    TagBox["5", HoldForm], 
+                    StyleBox["\[Times]", FontColor -> GrayLevel[0.3]], 
+                    TagBox[
+                    FrameBox[
+                    FractionBox["2", "5"], FrameStyle -> GrayLevel[0.8], 
+                    FrameMargins -> 1, BaselinePosition -> Baseline, 
+                    ContentPadding -> False, StripOnInput -> False], 
+                    HoldForm]}], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    RowBox[{
+                    TagBox[
+                    FractionBox[
+                    RowBox[{"5", " ", "2"}], 
+                    RowBox[{"2", " ", "5"}]], HoldForm], "\[LongEqual]", 
+                    "1"}]}, "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    FrameBox[
+                    TagBox[
+                    GridBox[{{
+                    StyleBox[
+                    TemplateBox[{"\"Answer:\""}, "RowDefault"], FontFamily -> 
+                    "Roboto", FontSize -> 12, StripOnInput -> False], 
+                    "\[SpanFromLeft]"}, {"\"\"", 
+                    TagBox["1", HoldForm]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {2.5, Automatic}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {2, 0, 3}, "Rows" -> {1.5, 1, 2}}, 
+                    AllowScriptLevelChange -> False], "Grid"], FrameStyle -> {
+                    AbsoluteThickness[1], 
+                    RGBColor[0.52, 0.76, 0.86]}, Background -> 
+                    RGBColor[0.91, 0.98, 1], RoundingRadius -> 3, 
+                    FrameMargins -> 12, StripOnInput -> False]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxDividers -> {
+               "Columns" -> {{False}}, "Rows" -> {False, {True}, False}}, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{3}}}, FrameStyle -> 
+              GrayLevel[0.7]], "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement["dataformats", {}, {"plaintext"}]}], 
+     XMLElement["expressiontypes", {"count" -> "2"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Hide steps", "input" -> "Limit__Hide steps"}, {}]}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Series expansion at n = \[Infinity]", "scanner" -> 
+     "Series", "id" -> "SeriesExpansionAtX=x0", "position" -> "100", "error" -> 
+     "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {
+        "Series[(n^2 + 5 n^3)/(2 n^3 + 3 Sqrt[4 + n^6]), {n, Infinity, \
+18}]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TemplateBox[{
+                  RowBox[{"1", "+", 
+                    FractionBox["1", 
+                    RowBox[{"5", " ", "n"}]], "-", 
+                    FractionBox["6", 
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["n", "6"]}]], "-", 
+                    FractionBox["6", 
+                    RowBox[{"25", " ", 
+                    SuperscriptBox["n", "7"]}]], "+", 
+                    FractionBox["66", 
+                    RowBox[{"25", " ", 
+                    SuperscriptBox["n", "12"]}]], "+", 
+                    FractionBox["66", 
+                    RowBox[{"125", " ", 
+                    SuperscriptBox["n", "13"]}]], "-", 
+                    FractionBox["876", 
+                    RowBox[{"125", " ", 
+                    SuperscriptBox["n", "18"]}]], "-", 
+                    FractionBox["876", 
+                    RowBox[{"625", " ", 
+                    SuperscriptBox["n", "19"]}]], "+", 
+                    FractionBox["12786", 
+                    RowBox[{"625", " ", 
+                    SuperscriptBox["n", "24"]}]], "+", 
+                    InterpretationBox[
+                    RowBox[{"O", "(", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox["1", "n"], ")"}], "25"], ")"}], 
+                    SeriesData[$CellContext`n, 
+                    DirectedInfinity[1], {}, 0, 25, 1], Editable -> False]}], 
+                  RowBox[{"SeriesData", "[", 
+                    RowBox[{"n", ",", "\[Infinity]", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", 
+                    FractionBox["1", "5"], ",", "0", ",", "0", ",", "0", ",", 
+                    "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox["6", "5"]}], ",", 
+                    RowBox[{"-", 
+                    FractionBox["6", "25"]}], ",", "0", ",", "0", ",", "0", 
+                    ",", "0", ",", 
+                    FractionBox["66", "25"], ",", 
+                    FractionBox["66", "125"], ",", "0", ",", "0", ",", "0", 
+                    ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox["876", "125"]}], ",", 
+                    RowBox[{"-", 
+                    FractionBox["876", "625"]}], ",", "0", ",", "0", ",", "0",
+                     ",", "0", ",", 
+                    FractionBox["12786", "625"]}], "}"}], ",", "0", ",", "25",
+                     ",", "1"}], "]"}]}, "SeriesData", 
+                 DisplayFunction -> (#& ), InterpretationFunction -> (#2& ), 
+                 SyntaxForm -> Plus]}, {
+                StyleBox[
+                 
+                 RowBox[{
+                  "\"(\"", "\[NoBreak]", "\"Laurent series\"", "\[NoBreak]", 
+                   "\")\""}], {FontFamily -> "Roboto", FontSize -> 10, 
+                  GrayLevel[0.5], LinebreakAdjustments -> {1, 100, 1, 0, 100},
+                   LineIndent -> 0}]}}, 
+              GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Fewer terms", "input" -> 
+         "SeriesExpansionAtX=x0__Fewer terms"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "More terms", "input" -> 
+         "SeriesExpansionAtX=x0__More terms"}, {}]}]}], Typeset`aux1$$ = {
+   True, False, {False, False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, Typeset`nonpods$$ = {
+    XMLElement["assumptions", {"count" -> "1"}, {
+      XMLElement[
+      "assumption", {
+       "type" -> "LimitHead", "word" -> " limit ", "template" -> 
+        "Assuming limit refers to a continuous limit${separator}Use the \
+${desc} instead", "count" -> "2", "pulldown" -> "false", "default" -> 
+        "\"LimitHead\" -> {\"Continuous\"}"}, {
+        XMLElement[
+        "value", {
+         "name" -> "Continuous", "desc" -> "continuous", "input" -> 
+          "\"LimitHead\" -> {\"Continuous\"}"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Discrete", "desc" -> "discrete", "input" -> 
+          "\"LimitHead\" -> {\"Discrete\"}"}, {}]}]}]}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> 
+    "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
+    "numpods" -> "2", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
+    "", "timing" -> "0.964", "parsetiming" -> "0.6980000000000001", 
+    "parsetimedout" -> "false", "recalculate" -> "", "id" -> 
+    "MSP364511ffg5e2a257006000002f0i7i3a706g7d31", "host" -> 
+    "https://www6b3.wolframalpha.com", "server" -> "4", "related" -> 
+    "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa364611ffg5e2a2570060000018ihi0902db24bde6430556393126808734", "version" -> 
+    "2.6", "inputstring" -> 
+    "limit (n^2 + 5 n^3)/(2 n^3 + 3 Sqrt[4 + n^6]) as n->infinity"}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> -5., 
+    "Date" -> {2022, 11, 26, 15, 45, 14.1116354`8.90215229811222}, "Line" -> 
+    460, "SessionID" -> 16944803280185088864}, Typeset`showpods$$ = {1, 2}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
+   Typeset`newq$$ = 
+   "limit (n^2 + 5 n^3)/(2 n^3 + 3 Sqrt[4 + n^6]) as n->infinity"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$}, {Typeset`aux1$$, Typeset`aux2$$}, 
+        Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
+        Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
+        Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
+        Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{501., {1298.3544921875, 1303.6455078125}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$, Typeset`pod2$$}], Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.878484314158561*^9},ExpressionUUID->"96a859a2-df91-49a7-bc91-\
+0f107d43d81b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2.4", "Section",
+ CellChangeTimes->{{3.878484099022386*^9, 
+  3.878484099788067*^9}},ExpressionUUID->"a84e2e84-3584-4694-97d2-\
+13290f5bac95"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   FractionBox[
+    SuperscriptBox["2", "n"], 
+    SuperscriptBox["n", "2"]], ",", 
+   RowBox[{"n", "->", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.87848410631785*^9, 3.8784841228836184`*^9}},
+ CellLabel->
+  "In[452]:=",ExpressionUUID->"c4768a67-6663-40e8-9192-f503c4f6edff"],
+
+Cell[BoxData["\[Infinity]"], "Output",
+ CellChangeTimes->{{3.878484117438856*^9, 3.878484123321087*^9}},
+ CellLabel->
+  "Out[452]=",ExpressionUUID->"55de12f9-15fa-4f80-9361-608ab0547f4a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderscriptBox["\[Limit]", 
+   RowBox[{"n", "\[Rule]", "\[Infinity]"}]], 
+  FractionBox[
+   SuperscriptBox["2", "n"], 
+   SuperscriptBox["n", "2"]]}]], "Input",
+ CellChangeTimes->{{3.878484157009325*^9, 3.8784841669735546`*^9}},
+ CellLabel->
+  "In[453]:=",ExpressionUUID->"77a74c0b-e86f-435c-a8aa-cecc782f4109"],
+
+Cell[BoxData["\[Infinity]"], "Output",
+ CellChangeTimes->{3.8784841673953686`*^9},
+ CellLabel->
+  "Out[453]=",ExpressionUUID->"855f20a1-52fe-49da-9c04-475d5fa89f94"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "limit ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"2", "^", "n"}], "/", 
+     RowBox[{"n", "^", "2"}]}], ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "77d2c85e-a500-4a6c-8620-49194e95b595"],
+ " as n->infinity"
+}], "WolframAlphaLong",
+ CellChangeTimes->{{3.878484237493911*^9, 3.878484257271102*^9}, {
+  3.878484288911968*^9, 3.8784842945462294`*^9}},
+ CellLabel->
+  "In[459]:=",ExpressionUUID->"bb1312c5-5ed1-499c-937e-284f0b61dab0"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = "limit (2^n/n^2) as n->infinity", 
+   Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    InputAssumptions -> {"\"LimitHead\" -> {\"Discrete\"}"}, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}}, Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Input", "scanner" -> "Identity", "id" -> "Input", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["minput", {}, {"DiscreteLimit[2^n/n^2, n -> Infinity]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             TemplateBox[{
+               FractionBox[
+                SuperscriptBox["2", "n"], 
+                SuperscriptBox["n", "2"]], "n", "\[Infinity]"}, 
+              "DiscreteLimit", SyntaxForm -> DiscreteLimit], 
+             PolynomialForm[#, TraditionalOrder -> False]& ], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,computabledata,formatteddata,formuladata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Result", "scanner" -> "Identity", "id" -> "Result", 
+     "position" -> "200", "error" -> "false", "numsubpods" -> "1", "primary" -> 
+     "true"}, {
+     XMLElement["subpod", {"title" -> "", "primary" -> "true"}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox["\[Infinity]", TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,moutput,computabledata,formatteddata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
+   Typeset`aux1$$ = {True, False, {False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, Typeset`nonpods$$ = {
+    XMLElement["assumptions", {"count" -> "1"}, {
+      XMLElement[
+      "assumption", {
+       "type" -> "LimitHead", "word" -> " limit ", "template" -> 
+        "Assuming limit refers to a discrete limit${separator}Use the ${desc} \
+instead", "count" -> "2", "pulldown" -> "false", "default" -> 
+        "\"LimitHead\" -> {\"Continuous\"}"}, {
+        XMLElement[
+        "value", {
+         "name" -> "Discrete", "desc" -> "discrete", "input" -> 
+          "\"LimitHead\" -> {\"Discrete\"}"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Continuous", "desc" -> "continuous", "input" -> 
+          "\"LimitHead\" -> {\"Continuous\"}"}, {}]}]}]}, Typeset`initdone$$ =
+    FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> 
+    "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
+    "numpods" -> "2", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
+    "", "timing" -> "0.613", "parsetiming" -> "0.449", "parsetimedout" -> 
+    "false", "recalculate" -> "", "id" -> 
+    "MSP117622769i6ia2db0gg70000362f04ia6f797h5c", "host" -> 
+    "https://www6b3.wolframalpha.com", "server" -> "15", "related" -> 
+    "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa117722769i6ia2db0gg700001be9ghii54801c9b8884920455003441207", "version" -> 
+    "2.6", "inputstring" -> "limit (2^n/n^2) as n->infinity"}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> -5., 
+    "Date" -> {2022, 11, 26, 15, 45, 0.218035`7.091101203346156}, "Line" -> 
+    460, "SessionID" -> 16944803280185088864}, Typeset`showpods$$ = {1, 2}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
+   Typeset`newq$$ = "limit (2^n/n^2) as n->infinity"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$}, {Typeset`aux1$$, Typeset`aux2$$}, 
+        Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
+        Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
+        Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
+        Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{502., {105.3544921875, 110.6455078125}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$, Typeset`pod2$$}], Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.878484296030545*^9},ExpressionUUID->"d9713019-26e2-4482-82a0-\
+b1c8002c55e9"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2.7", "Section",
+ CellChangeTimes->{{3.878484101163121*^9, 
+  3.878484101569338*^9}},ExpressionUUID->"78417a97-83e1-491b-8a33-\
+2e2b63264950"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderscriptBox["\[Limit]", 
+   RowBox[{"n", "\[Rule]", "\[Infinity]"}]], 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     SuperscriptBox["n", "2"]}], ")"}], 
+   FractionBox["1", 
+    RowBox[{"Log", "[", "n", "]"}]]]}]], "Input",
+ CellChangeTimes->{{3.878484191186432*^9, 3.8784842005113688`*^9}},
+ CellLabel->
+  "In[455]:=",ExpressionUUID->"3ad3a7eb-3b09-4df2-9231-4c622f51ed71"],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", "2"]], "Output",
+ CellChangeTimes->{3.8784842009020014`*^9},
+ CellLabel->
+  "Out[455]=",ExpressionUUID->"ba2a09d0-e6cf-4d46-aee6-2d8867a865b2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "limit ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      SuperscriptBox["n", "2"]}], ")"}], "^", 
+    RowBox[{"(", 
+     RowBox[{"1", "/", 
+      RowBox[{"ln", "(", "n", ")"}]}], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2401076e-9a35-4c5d-a475-8f274c4fcaab"],
+ " as n->infinity"
+}], "WolframAlphaLong",
+ CellChangeTimes->{{3.878484237493911*^9, 3.878484257271102*^9}},
+ CellLabel->
+  "In[458]:=",ExpressionUUID->"5ec7dbd6-8a03-4571-8259-21798fdeb673"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = "limit (1 + n^2)^(1/ln(n)) as n->infinity", 
+   Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}, 
+    PodStates -> {
+     "Limit__Step-by-step solution", "SeriesExpansionAtX=x0__More terms"}}, 
+   Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Limit", "scanner" -> "Limit", "id" -> "Limit", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "2", "primary" -> 
+     "true"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {"Limit[(1 + n^2)^(1/Log[n]), n -> Infinity]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             RowBox[{
+               TemplateBox[{
+                 StyleBox[
+                  RadicalBox[
+                   RowBox[{"1", "+", 
+                    SuperscriptBox["n", "2"]}], 
+                   RowBox[{"log", "(", "n", ")"}]], ScriptLevel -> 0, 
+                  StripOnInput -> False], "n", "\[Infinity]"}, "Limit2Arg", 
+                SyntaxForm -> Limit, DisplayFunction -> (RowBox[{
+                   TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                InterpretationFunction -> (RowBox[{"Limit", "[", 
+                   RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], "\[LongEqual]", 
+               TagBox[
+                SuperscriptBox["\[ExponentialE]", "2"], Identity]}], 
+             HoldForm], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["subpod", {"title" -> "Possible intermediate steps"}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{"\"Find the following limit\""}, 
+                    "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    RadicalBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], 
+                    RowBox[{"log", "(", "n", ")"}]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm]}, "RowDefault"], 
+                    HoldForm]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                  GridBoxSpacings -> {
+                   "Columns" -> {{None}}, "Rows" -> {{0.5}}}], "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    TemplateBox[{
+                    TemplateBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    RadicalBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], 
+                    RowBox[{"log", "(", "n", ")"}]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\" \""}, "RowDefault"], 
+                    "\"\[LongEqual] \"", 
+                    StyleBox[
+                    TemplateBox[{
+                    RowBox[{"exp", "(", 
+                    TagBox[
+                    RowBox[{"log", "(", 
+                    RadicalBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], 
+                    RowBox[{"log", "(", "n", ")"}]], ")"}], HoldForm], ")"}], 
+                    "n", "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False]}, "RowDefault"]}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    RowBox[{"exp", "(", 
+                    RowBox[{"log", "(", 
+                    RadicalBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], 
+                    RowBox[{"log", "(", "n", ")"}]], ")"}], ")"}], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    RowBox[{
+                    RowBox[{"exp", "(", 
+                    RowBox[{"log", "(", 
+                    RadicalBox[
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], 
+                    RowBox[{"log", "(", "n", ")"}]], ")"}], ")"}], 
+                    "\[LongEqual]", 
+                    RowBox[{"exp", "(", 
+                    FrameBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], ")"}], 
+                    RowBox[{"log", "(", "n", ")"}]], ")"}], FrameStyle -> 
+                    GrayLevel[0.8], FrameMargins -> 1, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, StripOnInput -> False],
+                     ")"}]}]}, "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    RowBox[{"exp", "(", 
+                    FrameBox[
+                    RowBox[{"(", 
+                    FractionBox[
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], ")"}], 
+                    RowBox[{"log", "(", "n", ")"}]], ")"}], FrameStyle -> 
+                    GrayLevel[0.8], FrameMargins -> 1, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, StripOnInput -> False],
+                     ")"}], "n", "\[Infinity]"}, "Limit2Arg", SyntaxForm -> 
+                    Limit, DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    RowBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    RowBox[{"exp", "(", 
+                    FractionBox[
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], ")"}], 
+                    RowBox[{"log", "(", "n", ")"}]], ")"}], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\[LongEqual]", 
+                    RowBox[{"exp", "(", 
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], ")"}], 
+                    RowBox[{"log", "(", "n", ")"}]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], ")"}]}]}, "RowDefault"], "\":\""},
+                     "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TagBox[
+                    FrameBox[
+                    RowBox[{"(", 
+                    RowBox[{"exp", "(", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], ")"}], 
+                    RowBox[{"log", "(", "n", ")"}]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], ")"}], ")"}], 
+                    FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False], HoldForm], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"Write \"", 
+                    TemplateBox[{
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{
+                    SuperscriptBox["n", "2"], "+", "1"}], HoldForm], ")"}], 
+                    "\" \""}, "RowDefault"], "\"as \"", 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{"1", "+", 
+                    FractionBox["1", 
+                    SuperscriptBox["n", "2"]]}], HoldForm], ")"}], "+", 
+                    RowBox[{"log", "(", 
+                    SuperscriptBox["n", "2"], ")"}]}], HoldForm]}, 
+                    "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TagBox[
+                    RowBox[{"exp", "(", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    FrameBox[
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{"1", "+", 
+                    FractionBox["1", 
+                    SuperscriptBox["n", "2"]]}], HoldForm], ")"}], "+", 
+                    RowBox[{"log", "(", 
+                    SuperscriptBox["n", "2"], ")"}]}], HoldForm], ")"}], 
+                    FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False], 
+                    TagBox[
+                    RowBox[{"log", "(", "n", ")"}], HoldForm]], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], ")"}], HoldForm], 
+                    HoldForm]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"Replace \"", 
+                    TemplateBox[{
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{"1", "+", 
+                    FractionBox["1", 
+                    SuperscriptBox["n", "2"]]}], HoldForm], ")"}], "\" \""}, 
+                    "RowDefault"], "\"by \"", 
+                    TemplateBox[{"0", "\" \""}, "RowDefault"], "\"in \"", 
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"log", "(", 
+                    TagBox[
+                    RowBox[{"1", "+", 
+                    FractionBox["1", 
+                    SuperscriptBox["n", "2"]]}], HoldForm], ")"}], "+", 
+                    RowBox[{"log", "(", 
+                    SuperscriptBox["n", "2"], ")"}]}], HoldForm]}, 
+                    "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TagBox[
+                    RowBox[{"exp", "(", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"log", "(", 
+                    SuperscriptBox["n", "2"], ")"}], "+", 
+                    FrameBox[
+                    "0", FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False]}], HoldForm], 
+                    RowBox[{"log", "(", "n", ")"}]], "n", "\[Infinity]"}, 
+                    "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], ")"}], HoldForm], 
+                    HoldForm]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    TemplateBox[{
+                    TemplateBox[{
+                    FractionBox[
+                    RowBox[{"log", "(", 
+                    SuperscriptBox["n", "2"], ")"}], 
+                    RowBox[{"log", "(", "n", ")"}]], "\" \""}, "RowDefault"], 
+                    "\"\[LongEqual] \"", 
+                    FractionBox[
+                    FrameBox[
+                    RowBox[{"2", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], FrameStyle -> 
+                    GrayLevel[0.8], FrameMargins -> 1, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, StripOnInput -> False], 
+                    TagBox[
+                    RowBox[{"log", "(", "n", ")"}], HoldForm]]}, 
+                    "RowDefault"]}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TagBox[
+                    RowBox[{"exp", "(", 
+                    TagBox[
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    FrameBox[
+                    RowBox[{"2", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], FrameStyle -> 
+                    GrayLevel[0.8], FrameMargins -> 1, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, StripOnInput -> False], 
+                    TagBox[
+                    RowBox[{"log", "(", "n", ")"}], HoldForm]], "n", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], ")"}], HoldForm], 
+                    HoldForm]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{
+                    RowBox[{
+                    TagBox[
+                    FractionBox[
+                    RowBox[{"2", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], 
+                    RowBox[{"log", "(", "n", ")"}]], HoldForm], 
+                    "\[LongEqual]", "2"}]}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TagBox[
+                    RowBox[{"exp", "(", 
+                    TagBox[
+                    StyleBox[
+                    
+                    TemplateBox[{"2", "n", "\[Infinity]"}, "Limit2Arg", 
+                    SyntaxForm -> Limit, DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], ")"}], HoldForm], 
+                    HoldForm]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"Since \"", 
+                    TemplateBox[{"2", "\" \""}, "RowDefault"], "\"is \"", 
+                    "\"constant, \"", 
+                    TemplateBox[{
+                    TemplateBox[{
+                    StyleBox[
+                    
+                    TemplateBox[{"2", "n", "\[Infinity]"}, "Limit2Arg", 
+                    SyntaxForm -> Limit, DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\" \""}, "RowDefault"], 
+                    "\"\[LongEqual] \"", "2"}, "RowDefault"]}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    FrameBox[
+                    TagBox[
+                    GridBox[{{
+                    StyleBox[
+                    TemplateBox[{"\"Answer:\""}, "RowDefault"], FontFamily -> 
+                    "Roboto", FontSize -> 12, StripOnInput -> False], 
+                    "\[SpanFromLeft]"}, {"\"\"", 
+                    TagBox[
+                    TagBox[
+                    SuperscriptBox["\[ExponentialE]", 
+                    FrameBox[
+                    "2", FrameStyle -> GrayLevel[0.8], FrameMargins -> 1, 
+                    BaselinePosition -> Baseline, ContentPadding -> False, 
+                    StripOnInput -> False]], HoldForm], HoldForm]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {2.5, Automatic}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {2, 0, 3}, "Rows" -> {1.5, 1, 2}}, 
+                    AllowScriptLevelChange -> False], "Grid"], FrameStyle -> {
+                    AbsoluteThickness[1], 
+                    RGBColor[0.52, 0.76, 0.86]}, Background -> 
+                    RGBColor[0.91, 0.98, 1], RoundingRadius -> 3, 
+                    FrameMargins -> 12, StripOnInput -> False]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxDividers -> {
+               "Columns" -> {{False}}, "Rows" -> {False, {True}, False}}, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{3}}}, FrameStyle -> 
+              GrayLevel[0.7]], "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement["dataformats", {}, {"plaintext"}], 
+       XMLElement["infos", {"count" -> "1"}, {
+         XMLElement["info", {"text" -> "log(x) is the natural logarithm"}, {
+           XMLElement[
+           "link", {
+            "url" -> "http://reference.wolfram.com/language/ref/Log.html", 
+             "text" -> "Documentation", "title" -> "Mathematica"}, {}], 
+           XMLElement[
+           "link", {
+            "url" -> "http://functions.wolfram.com/ElementaryFunctions/Log", 
+             "text" -> "Properties", "title" -> 
+             "Wolfram Functions Site"}, {}], 
+           XMLElement[
+           "link", {
+            "url" -> "http://mathworld.wolfram.com/NaturalLogarithm.html", 
+             "text" -> "Definition", "title" -> "MathWorld"}, {}]}]}]}], 
+     XMLElement["expressiontypes", {"count" -> "2"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Approximate form", "input" -> 
+         "Limit__Approximate form"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "Hide steps", "input" -> "Limit__Hide steps"}, {}]}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Series expansion at n = \[Infinity]", "scanner" -> 
+     "Series", "id" -> "SeriesExpansionAtX=x0", "position" -> "100", "error" -> 
+     "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {"Series[(1 + n^2)^Log[n]^(-1), {n, Infinity, 10}]"}], 
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TemplateBox[{
+                  RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], "+", 
+                    FractionBox[
+                    SuperscriptBox["\[ExponentialE]", "2"], 
+                    RowBox[{
+                    SuperscriptBox["n", "2"], " ", 
+                    RowBox[{"log", "(", "n", ")"}]}]], "-", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"log", "(", "n", ")"}], "-", "1"}], ")"}]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["n", "4"], " ", 
+                    RowBox[{
+                    SuperscriptBox["log", "2"], "(", "n", ")"}]}]], "+", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"log", "(", "n", ")"}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}]}], 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["n", "6"], " ", 
+                    RowBox[{
+                    SuperscriptBox["log", "3"], "(", "n", ")"}]}]], "-", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"log", "(", "n", ")"}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"3", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}]}], 
+                    RowBox[{"24", " ", 
+                    SuperscriptBox["n", "8"], " ", 
+                    RowBox[{
+                    SuperscriptBox["log", "4"], "(", "n", ")"}]}]], "+", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"log", "(", "n", ")"}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"3", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}]}], 
+                    RowBox[{"120", " ", 
+                    SuperscriptBox["n", "10"], " ", 
+                    RowBox[{
+                    SuperscriptBox["log", "5"], "(", "n", ")"}]}]], "-", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"log", "(", "n", ")"}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"3", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"5", " ", 
+                    RowBox[{"log", "(", "n", ")"}]}], "-", "1"}], ")"}]}], 
+                    RowBox[{"720", " ", 
+                    SuperscriptBox["n", "12"], " ", 
+                    RowBox[{
+                    SuperscriptBox["log", "6"], "(", "n", ")"}]}]], "+", 
+                    InterpretationBox[
+                    RowBox[{"O", "(", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox["1", "n"], ")"}], "13"], ")"}], 
+                    SeriesData[$CellContext`n, 
+                    DirectedInfinity[1], {}, 0, 13, 1], Editable -> False]}], 
+                  RowBox[{"SeriesData", "[", 
+                    RowBox[{"n", ",", "\[Infinity]", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], ",", "0", ",", 
+                    FractionBox[
+                    SuperscriptBox["\[ExponentialE]", "2"], 
+                    RowBox[{"Log", "[", "n", "]"}]], ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"Log", "[", "n", "]"}]}], ")"}]}], 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox[
+                    RowBox[{"Log", "[", "n", "]"}], "2"]}]]}], ",", "0", ",", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"Log", "[", "n", "]"}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}]}], 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox[
+                    RowBox[{"Log", "[", "n", "]"}], "3"]}]], ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"Log", "[", "n", "]"}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"3", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}]}], 
+                    RowBox[{"24", " ", 
+                    SuperscriptBox[
+                    RowBox[{"Log", "[", "n", "]"}], "4"]}]]}], ",", "0", ",", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"Log", "[", "n", "]"}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"3", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"4", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}]}], 
+                    RowBox[{"120", " ", 
+                    SuperscriptBox[
+                    RowBox[{"Log", "[", "n", "]"}], "5"]}]], ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"Log", "[", "n", "]"}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"3", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"4", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"5", " ", 
+                    RowBox[{"Log", "[", "n", "]"}]}]}], ")"}]}], 
+                    RowBox[{"720", " ", 
+                    SuperscriptBox[
+                    RowBox[{"Log", "[", "n", "]"}], "6"]}]]}]}], "}"}], ",", 
+                    "0", ",", "13", ",", "1"}], "]"}]}, "SeriesData", 
+                 DisplayFunction -> (#& ), InterpretationFunction -> (#2& ), 
+                 SyntaxForm -> Plus]}, {
+                StyleBox[
+                 
+                 RowBox[{
+                  "\"(\"", "\[NoBreak]", "\"generalized Puiseux series\"", 
+                   "\[NoBreak]", "\")\""}], {
+                 FontFamily -> "Roboto", FontSize -> 10, 
+                  GrayLevel[0.5], LinebreakAdjustments -> {1, 100, 1, 0, 100},
+                   LineIndent -> 0}]}}, 
+              GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}], 
+       XMLElement["infos", {"count" -> "1"}, {
+         XMLElement["info", {"text" -> "log(x) is the natural logarithm"}, {
+           XMLElement[
+           "link", {
+            "url" -> "http://reference.wolfram.com/language/ref/Log.html", 
+             "text" -> "Documentation", "title" -> "Mathematica"}, {}], 
+           XMLElement[
+           "link", {
+            "url" -> "http://functions.wolfram.com/ElementaryFunctions/Log", 
+             "text" -> "Properties", "title" -> 
+             "Wolfram Functions Site"}, {}], 
+           XMLElement[
+           "link", {
+            "url" -> "http://mathworld.wolfram.com/NaturalLogarithm.html", 
+             "text" -> "Definition", "title" -> "MathWorld"}, {}]}]}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Fewer terms", "input" -> 
+         "SeriesExpansionAtX=x0__Fewer terms"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "More terms", "input" -> 
+         "SeriesExpansionAtX=x0__More terms"}, {}]}]}], Typeset`aux1$$ = {
+   True, False, {False, False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, Typeset`nonpods$$ = {
+    XMLElement["assumptions", {"count" -> "1"}, {
+      XMLElement[
+      "assumption", {
+       "type" -> "LimitHead", "word" -> " limit ", "template" -> 
+        "Assuming limit refers to a continuous limit${separator}Use the \
+${desc} instead", "count" -> "2", "pulldown" -> "false", "default" -> 
+        "\"LimitHead\" -> {\"Continuous\"}"}, {
+        XMLElement[
+        "value", {
+         "name" -> "Continuous", "desc" -> "continuous", "input" -> 
+          "\"LimitHead\" -> {\"Continuous\"}"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Discrete", "desc" -> "discrete", "input" -> 
+          "\"LimitHead\" -> {\"Discrete\"}"}, {}]}]}]}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> 
+    "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
+    "numpods" -> "2", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
+    "", "timing" -> "0.868", "parsetiming" -> "0.47700000000000004", 
+    "parsetimedout" -> "false", "recalculate" -> "", "id" -> 
+    "MSP230522769g83b49207fa00004f5a0c4955if0e4f", "host" -> 
+    "https://www6b3.wolframalpha.com", "server" -> "15", "related" -> 
+    "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa230622769g83b49207fa000049g2ceg5d7hhfegb8884920455003441207", "version" -> 
+    "2.6", "inputstring" -> "limit (1 + n^2)^(1/ln(n)) as n->infinity"}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> -5., 
+    "Date" -> {2022, 11, 26, 15, 44, 18.9586089`9.030381407601373}, "Line" -> 
+    458, "SessionID" -> 16944803280185088864}, Typeset`showpods$$ = {1, 2}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
+   Typeset`newq$$ = "limit (1 + n^2)^(1/ln(n)) as n->infinity"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$}, {Typeset`aux1$$, Typeset`aux2$$}, 
+        Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
+        Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
+        Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
+        Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{501., {758.3544921875, 763.6455078125}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$, Typeset`pod2$$}], Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.8784842590054636`*^9},ExpressionUUID->"69262766-fb67-4cbb-9d9f-\
+7a5cf236b044"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2.9", "Section",
+ CellChangeTimes->{{3.8784841030223894`*^9, 
+  3.878484103553624*^9}},ExpressionUUID->"bbf96c95-2592-4fb8-882b-\
+be1c95a83946"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderscriptBox["\[Limit]", 
+   RowBox[{"n", "\[Rule]", "\[Infinity]"}]], 
+  RowBox[{"(", 
+   RowBox[{"n", " ", 
+    RowBox[{"Sin", "[", 
+     FractionBox["1", "n"], "]"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.8784842081589317`*^9, 3.8784842128362274`*^9}},
+ CellLabel->
+  "In[456]:=",ExpressionUUID->"49fe2c3d-ed52-4828-8d83-52e7f6fd3086"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.8784842132268515`*^9},
+ CellLabel->
+  "Out[456]=",ExpressionUUID->"1ebfde0d-59f0-4115-96aa-ded250359886"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "limit ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", " ", 
+    RowBox[{"Sin", "[", 
+     FractionBox["1", "n"], "]"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "581977e2-3228-447d-97bc-a744d5d0bef4"],
+ " as n->infinity"
+}], "WolframAlphaLong",
+ CellChangeTimes->{{3.878484237493911*^9, 3.878484257271102*^9}, {
+  3.8784843579085383`*^9, 3.8784843579085383`*^9}},
+ CellLabel->
+  "In[461]:=",ExpressionUUID->"9dcc084a-d64e-4bdb-8d8c-615502fd9219"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = "limit n Sin[1/n] as n->infinity", 
+   Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}, 
+    PodStates -> {
+     "SeriesExpansionAtX=x0__More terms", 
+      "SeriesExpansionAtX=x0__More terms"}}, Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Limit", "scanner" -> "Limit", "id" -> "Limit", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "1", "primary" -> 
+     "true"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["minput", {}, {"Limit[n Sin[1/n], n -> Infinity]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             RowBox[{
+               TemplateBox[{
+                 StyleBox[
+                  RowBox[{"n", " ", 
+                    RowBox[{"sin", "(", 
+                    FractionBox["1", "n"], ")"}]}], ScriptLevel -> 0, 
+                  StripOnInput -> False], "n", "\[Infinity]"}, "Limit2Arg", 
+                SyntaxForm -> Limit, DisplayFunction -> (RowBox[{
+                   TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                InterpretationFunction -> (RowBox[{"Limit", "[", 
+                   RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], "\[LongEqual]", 
+               "1"}], HoldForm], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Step-by-step solution", "input" -> 
+         "Limit__Step-by-step solution", "stepbystep" -> "true"}, {}]}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Series expansion at n = \[Infinity]", "scanner" -> 
+     "Series", "id" -> "SeriesExpansionAtX=x0", "position" -> "100", "error" -> 
+     "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["minput", {}, {"Series[n Sin[n^(-1)], {n, Infinity, 18}]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TemplateBox[{
+                  RowBox[{"1", "-", 
+                    FractionBox["1", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["n", "2"]}]], "+", 
+                    FractionBox["1", 
+                    RowBox[{"120", " ", 
+                    SuperscriptBox["n", "4"]}]], "-", 
+                    FractionBox["1", 
+                    RowBox[{"5040", " ", 
+                    SuperscriptBox["n", "6"]}]], "+", 
+                    FractionBox["1", 
+                    RowBox[{"362880", " ", 
+                    SuperscriptBox["n", "8"]}]], "-", 
+                    FractionBox["1", 
+                    RowBox[{"39916800", " ", 
+                    SuperscriptBox["n", "10"]}]], "+", 
+                    FractionBox["1", 
+                    RowBox[{"6227020800", " ", 
+                    SuperscriptBox["n", "12"]}]], "-", 
+                    FractionBox["1", 
+                    RowBox[{"1307674368000", " ", 
+                    SuperscriptBox["n", "14"]}]], "+", 
+                    FractionBox["1", 
+                    RowBox[{"355687428096000", " ", 
+                    SuperscriptBox["n", "16"]}]], "-", 
+                    FractionBox["1", 
+                    RowBox[{"121645100408832000", " ", 
+                    SuperscriptBox["n", "18"]}]], "+", 
+                    FractionBox["1", 
+                    RowBox[{"51090942171709440000", " ", 
+                    SuperscriptBox["n", "20"]}]], "-", 
+                    FractionBox["1", 
+                    RowBox[{"25852016738884976640000", " ", 
+                    SuperscriptBox["n", "22"]}]], "+", 
+                    FractionBox["1", 
+                    RowBox[{"15511210043330985984000000", " ", 
+                    SuperscriptBox["n", "24"]}]], "+", 
+                    InterpretationBox[
+                    RowBox[{"O", "(", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox["1", "n"], ")"}], "25"], ")"}], 
+                    SeriesData[$CellContext`n, 
+                    DirectedInfinity[1], {}, 0, 25, 1], Editable -> False]}], 
+                  RowBox[{"SeriesData", "[", 
+                    RowBox[{"n", ",", "\[Infinity]", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox["1", "6"]}], ",", "0", ",", 
+                    FractionBox["1", "120"], ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox["1", "5040"]}], ",", "0", ",", 
+                    FractionBox["1", "362880"], ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox["1", "39916800"]}], ",", "0", ",", 
+                    FractionBox["1", "6227020800"], ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox["1", "1307674368000"]}], ",", "0", ",", 
+                    FractionBox["1", "355687428096000"], ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox["1", "121645100408832000"]}], ",", "0", ",", 
+                    FractionBox["1", "51090942171709440000"], ",", "0", ",", 
+                    RowBox[{"-", 
+                    FractionBox["1", "25852016738884976640000"]}], ",", "0", 
+                    ",", 
+                    FractionBox["1", "15511210043330985984000000"]}], "}"}], 
+                    ",", "0", ",", "25", ",", "1"}], "]"}]}, "SeriesData", 
+                 DisplayFunction -> (#& ), InterpretationFunction -> (#2& ), 
+                 SyntaxForm -> Plus]}, {
+                StyleBox[
+                 
+                 RowBox[{
+                  "\"(\"", "\[NoBreak]", "\"Laurent series\"", "\[NoBreak]", 
+                   "\")\""}], {FontFamily -> "Roboto", FontSize -> 10, 
+                  GrayLevel[0.5], LinebreakAdjustments -> {1, 100, 1, 0, 100},
+                   LineIndent -> 0}]}}, 
+              GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Fewer terms", "input" -> 
+         "SeriesExpansionAtX=x0__Fewer terms"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "More terms", "input" -> 
+         "SeriesExpansionAtX=x0__More terms"}, {}]}]}], Typeset`aux1$$ = {
+   True, False, {False}, True}, Typeset`aux2$$ = {True, False, {False}, True},
+    Typeset`asyncpods$$ = {}, Typeset`nonpods$$ = {
+    XMLElement["assumptions", {"count" -> "1"}, {
+      XMLElement[
+      "assumption", {
+       "type" -> "LimitHead", "word" -> " limit ", "template" -> 
+        "Assuming limit refers to a continuous limit${separator}Use the \
+${desc} instead", "count" -> "2", "pulldown" -> "false", "default" -> 
+        "\"LimitHead\" -> {\"Continuous\"}"}, {
+        XMLElement[
+        "value", {
+         "name" -> "Continuous", "desc" -> "continuous", "input" -> 
+          "\"LimitHead\" -> {\"Continuous\"}"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Discrete", "desc" -> "discrete", "input" -> 
+          "\"LimitHead\" -> {\"Discrete\"}"}, {}]}]}]}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> 
+    "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
+    "numpods" -> "2", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
+    "", "timing" -> "0.674", "parsetiming" -> "0.454", "parsetimedout" -> 
+    "false", "recalculate" -> "", "id" -> 
+    "MSP49240egf940ecc04if0000357562146hei95eg", "host" -> 
+    "https://www6b3.wolframalpha.com", "server" -> "3", "related" -> 
+    "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa50240egf940ecc04if00006aefb84b5ic62d323629183885576317489", "version" -> 
+    "2.6", "inputstring" -> "limit n Sin[1/n] as n->infinity"}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> -5., 
+    "Date" -> {2022, 11, 26, 15, 45, 59.8772872`9.529836944209357}, "Line" -> 
+    461, "SessionID" -> 16944803280185088864}, Typeset`showpods$$ = {1, 2}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
+   Typeset`newq$$ = "limit n Sin[1/n] as n->infinity"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$}, {Typeset`aux1$$, Typeset`aux2$$}, 
+        Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
+        Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
+        Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
+        Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{501., {210.3544921875, 215.6455078125}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$, Typeset`pod2$$}], Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.878484359908538*^9},ExpressionUUID->"7d1a2b95-539a-4818-905f-\
+3a929885c991"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{573., 579.6},
+WindowMargins->{{Automatic, -3}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"94feb3e1-a361-4c29-a4dc-e39ec61990c6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 241, 6, 35, "Text",ExpressionUUID->"739a1749-f212-43af-99a6-2ce2b014e310"],
+Cell[CellGroupData[{
+Cell[824, 30, 147, 3, 67, "Section",ExpressionUUID->"1f56dc2c-3444-4fe5-99a8-e8e2a6776d9c"],
+Cell[CellGroupData[{
+Cell[996, 37, 564, 18, 55, "Input",ExpressionUUID->"3b624617-89ec-47d3-9365-1e9da990144b"],
+Cell[1563, 57, 155, 3, 32, "Output",ExpressionUUID->"1d76c3b0-0d0d-48c9-a07a-155163f19939"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1755, 65, 520, 18, 55, "Input",ExpressionUUID->"97381125-08d5-4231-a045-64b124e96f05"],
+Cell[2278, 85, 153, 3, 32, "Output",ExpressionUUID->"00e35ae3-a73e-4215-9fd9-fc29a6886324"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2468, 93, 657, 22, 44, "WolframAlphaLong",ExpressionUUID->"3debb9b5-bf43-4a8c-80ea-732a6acec003"],
+Cell[3128, 117, 72058, 1529, 2612, "Print",ExpressionUUID->"96a859a2-df91-49a7-bc91-0f107d43d81b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75235, 1652, 148, 3, 67, "Section",ExpressionUUID->"a84e2e84-3584-4694-97d2-13290f5bac95"],
+Cell[CellGroupData[{
+Cell[75408, 1659, 340, 9, 47, "Input",ExpressionUUID->"c4768a67-6663-40e8-9192-f503c4f6edff"],
+Cell[75751, 1670, 187, 3, 32, "Output",ExpressionUUID->"55de12f9-15fa-4f80-9361-608ab0547f4a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75975, 1678, 337, 9, 47, "Input",ExpressionUUID->"77a74c0b-e86f-435c-a8aa-cecc782f4109"],
+Cell[76315, 1689, 165, 3, 32, "Output",ExpressionUUID->"855f20a1-52fe-49da-9c04-475d5fa89f94"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76517, 1697, 509, 15, 41, "WolframAlphaLong",ExpressionUUID->"bb1312c5-5ed1-499c-937e-284f0b61dab0"],
+Cell[77029, 1714, 7640, 147, 226, "Print",ExpressionUUID->"d9713019-26e2-4482-82a0-b1c8002c55e9"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84718, 1867, 148, 3, 67, "Section",ExpressionUUID->"78417a97-83e1-491b-8a33-2e2b63264950"],
+Cell[CellGroupData[{
+Cell[84891, 1874, 420, 12, 45, "Input",ExpressionUUID->"3ad3a7eb-3b09-4df2-9231-4c622f51ed71"],
+Cell[85314, 1888, 192, 4, 32, "Output",ExpressionUUID->"ba2a09d0-e6cf-4d46-aee6-2d8867a865b2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85543, 1897, 544, 17, 41, "WolframAlphaLong",ExpressionUUID->"5ec7dbd6-8a03-4571-8259-21798fdeb673"],
+Cell[86090, 1916, 51286, 1054, 1532, "Print",ExpressionUUID->"69262766-fb67-4cbb-9d9f-7a5cf236b044"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[137425, 2976, 150, 3, 67, "Section",ExpressionUUID->"bbf96c95-2592-4fb8-882b-be1c95a83946"],
+Cell[CellGroupData[{
+Cell[137600, 2983, 371, 10, 45, "Input",ExpressionUUID->"49fe2c3d-ed52-4828-8d83-52e7f6fd3086"],
+Cell[137974, 2995, 155, 3, 32, "Output",ExpressionUUID->"1ebfde0d-59f0-4115-96aa-ded250359886"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[138166, 3003, 490, 14, 41, "WolframAlphaLong",ExpressionUUID->"9dcc084a-d64e-4bdb-8d8c-615502fd9219"],
+Cell[138659, 3019, 13176, 263, 436, "Print",ExpressionUUID->"7d1a2b95-539a-4818-905f-3a929885c991"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

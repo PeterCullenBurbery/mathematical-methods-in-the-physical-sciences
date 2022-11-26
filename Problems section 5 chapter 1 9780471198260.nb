@@ -1,0 +1,2899 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    129007,       2891]
+NotebookOptionsPosition[    121529,       2756]
+NotebookOutlinePosition[    121975,       2773]
+CellTagsIndexPosition[    121932,       2770]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "Use the preliminary test to decide whether the following series are \
+divergent or require further testing. ",
+ StyleBox["Careful:",
+  FontSlant->"Italic"],
+ " Do not say that a series is convergent; the preliminary test cannot decide \
+this."
+}], "Text",
+ CellChangeTimes->{{3.878485064175049*^9, 
+  3.8784851032540517`*^9}},ExpressionUUID->"63707905-a6b7-40fd-9717-\
+805d3eb15799"],
+
+Cell[CellGroupData[{
+
+Cell["5.2", "Section",
+ CellChangeTimes->{{3.8784848529895487`*^9, 
+  3.87848485342705*^9}},ExpressionUUID->"5f457aec-0f45-4b08-a918-\
+fa3d28d5f766"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"terms", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     SqrtBox["2"], ",", 
+     FractionBox[
+      SqrtBox["3"], "2"], ",", 
+     FractionBox[
+      SqrtBox["4"], "3"], ",", 
+     FractionBox[
+      SqrtBox["5"], "5"], ",", 
+     FractionBox[
+      SqrtBox["6"], "5"]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8784849117372932`*^9, 3.8784849479074445`*^9}},
+ CellLabel->
+  "In[472]:=",ExpressionUUID->"71595f38-2524-4128-b508-8defb6fcea3b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", "terms", "]"}]], "Input",
+ CellChangeTimes->{{3.8784849489229717`*^9, 3.878484951164493*^9}},
+ CellLabel->
+  "In[473]:=",ExpressionUUID->"46c7413b-e242-4199-8dc1-82640fcd0335"],
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    SqrtBox["2"], ",", 
+    FractionBox[
+     SqrtBox["3"], "2"], ",", 
+    FractionBox["2", "3"], ",", 
+    FractionBox["1", 
+     SqrtBox["5"]], ",", 
+    FractionBox[
+     SqrtBox["6"], "5"]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.8784849518083057`*^9},
+ CellLabel->
+  "Out[473]=",ExpressionUUID->"599ea5af-a7af-4d49-b379-db9dc4bd2029"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", 
+  RowBox[{"Numerator", "[", "terms", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784849489229717`*^9, 3.8784849616747484`*^9}},
+ CellLabel->
+  "In[474]:=",ExpressionUUID->"26c9ced2-4020-407f-8fb3-f1fa2e5fbeca"],
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    SqrtBox["2"], ",", 
+    SqrtBox["3"], ",", "2", ",", "1", ",", 
+    SqrtBox["6"]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.878484962127775*^9},
+ CellLabel->
+  "Out[474]=",ExpressionUUID->"f34a9ba6-7f8a-4068-a091-0c7380a71acf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", 
+  RowBox[{"Denominator", "[", "terms", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784849489229717`*^9, 3.8784849688114223`*^9}},
+ CellLabel->
+  "In[475]:=",ExpressionUUID->"3843a302-25f5-46d6-b068-48b42b257478"],
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", 
+    SqrtBox["5"], ",", "5"}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.8784849693112817`*^9},
+ CellLabel->
+  "Out[475]=",ExpressionUUID->"86dd346a-831c-4bc0-a4cf-ae9c1b28ee2b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", 
+  SuperscriptBox[
+   RowBox[{"Denominator", "[", "terms", "]"}], "2"], "]"}]], "Input",
+ CellChangeTimes->{{3.8784849489229717`*^9, 3.87848497669221*^9}},
+ CellLabel->
+  "In[476]:=",ExpressionUUID->"ca4b68f8-d37a-4d96-8249-c2068c0aa699"],
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "4", ",", "9", ",", "5", ",", "25"}], "}"}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.8784849771352134`*^9},
+ CellLabel->
+  "Out[476]=",ExpressionUUID->"7d29624f-510b-440e-832e-a0b95813e56e"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"function", "=", 
+   RowBox[{
+    FractionBox[
+     SqrtBox[
+      RowBox[{"#", "+", "1"}]], "#"], "&"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8784849843516397`*^9, 3.878484999544709*^9}},
+ CellLabel->
+  "In[477]:=",ExpressionUUID->"f6959091-5946-43b9-be85-8b1d9e401d09"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"function", "[", 
+  RowBox[{"Range", "[", "10", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784850007634573`*^9, 3.8784850030784597`*^9}},
+ CellLabel->
+  "In[478]:=",ExpressionUUID->"9e8a3dcd-0dcb-449c-b5ec-be7984f4c3e8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   SqrtBox["2"], ",", 
+   FractionBox[
+    SqrtBox["3"], "2"], ",", 
+   FractionBox["2", "3"], ",", 
+   FractionBox[
+    SqrtBox["5"], "4"], ",", 
+   FractionBox[
+    SqrtBox["6"], "5"], ",", 
+   FractionBox[
+    SqrtBox["7"], "6"], ",", 
+   FractionBox[
+    RowBox[{"2", " ", 
+     SqrtBox["2"]}], "7"], ",", 
+   FractionBox["3", "8"], ",", 
+   FractionBox[
+    SqrtBox["10"], "9"], ",", 
+   FractionBox[
+    SqrtBox["11"], "10"]}], "}"}]], "Output",
+ CellChangeTimes->{3.878485003469082*^9},
+ CellLabel->
+  "Out[478]=",ExpressionUUID->"0d0c7b6b-a882-4625-bf61-e525827dda1e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"function", "[", "n", "]"}], ",", 
+   RowBox[{"n", "->", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.878485036481868*^9, 3.8784850429506197`*^9}},
+ CellLabel->
+  "In[480]:=",ExpressionUUID->"0fc04708-014d-4312-9197-d5adb44d6dda"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.878485045997653*^9},
+ CellLabel->
+  "Out[480]=",ExpressionUUID->"edc1f3b4-d2c7-463f-9ae9-caeee96577cd"]
+}, Open  ]],
+
+Cell["\<\
+The sequence doesn\[CloseCurlyQuote]t fail the preliminary test. Test further \
+\>", "Text",
+ CellChangeTimes->{{3.87848510687906*^9, 
+  3.8784851299753203`*^9}},ExpressionUUID->"442845f7-b779-4e92-8a67-\
+07a23ab4869f"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "sum of ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SqrtBox[
+     RowBox[{"n", "+", "1"}]], "n"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f40aa115-f4d3-45da-aa4d-f7602f7a562f"],
+ " from n=1 to \[Infinity]"
+}], "WolframAlphaLong",
+ CellChangeTimes->{{3.8784851323658*^9, 3.8784851592356224`*^9}},
+ CellLabel->
+  "In[482]:=",ExpressionUUID->"726313be-76df-49c4-aa38-437ec7cf4ab7"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = 
+   "sum of Sqrt[n + 1]/n from n=1 to \[Infinity]", Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}, 
+    PodStates -> {"Result__Show tests", "Result__Step-by-step solution"}}, 
+   Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Infinite sum", "scanner" -> "Sum", "id" -> "Result", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "2", "primary" -> 
+     "true"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["minput", {}, {"SumConvergence[Sqrt[n + 1]/n, n]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TemplateBox[{
+                  TagBox[
+                   TagBox[
+                    FormBox[
+                    TagBox[
+                    StyleBox[
+                    RowBox[{
+                    UnderoverscriptBox["\[Sum]", 
+                    RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+                    FractionBox[
+                    SqrtBox[
+                    RowBox[{"n", "+", "1"}]], "n"]}], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], TraditionalForm], 
+                    HoldForm], 
+                   PolynomialForm[#, TraditionalOrder -> False]& ], 
+                  TemplateBox[{6}, "Spacer1"], "\"diverges\""}, 
+                 "RowDefault"]}, {
+                StyleBox[
+                 TagBox[
+                  GridBox[{{
+                    TagBox[
+                    PaneBox[
+                    "\"convergence test\"", 
+                    BaseStyle -> {{
+                    BaselinePosition -> Baseline, FontColor -> 
+                    GrayLevel[0.3]}, LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Center}, BaselinePosition -> Baseline], 
+                    $CellContext`TagBoxWrapper["Label"]], 
+                    TagBox[
+                    PaneBox[
+                    "\"result\"", 
+                    BaseStyle -> {{
+                    BaselinePosition -> Baseline, FontColor -> 
+                    GrayLevel[0.3]}, LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Center}, BaselinePosition -> Baseline], 
+                    $CellContext`TagBoxWrapper["Label"]]}, {
+                    "\"integral\"", "\"series diverges\""}, {"\"limit\"", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"inconclusive\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {"\"ratio\"", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"inconclusive\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {"\"root\"", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"inconclusive\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}}, GridBoxAlignment -> {
+                    "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}, 
+                    "ItemsIndexed" -> {{1, 1} -> {Center, Baseline}, {1, 
+                    2} -> {Center, Baseline}}}, AutoDelete -> False, 
+                   GridBoxBackground -> {
+                    "Columns" -> {{None}}, "Rows" -> {None, None}}, 
+                   GridBoxFrame -> {
+                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                   GridBoxSpacings -> {
+                    "Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, FrameStyle -> 
+                   GrayLevel[0.84], BaselinePosition -> Automatic, 
+                   AllowScriptLevelChange -> False], "Grid"], 
+                 LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+                 False]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata"}]}], 
+     XMLElement["subpod", {"title" -> "Possible intermediate steps"}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{
+                    "\"Use the integral test to determine the convergence of \
+the series\""}, "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    FormBox[
+                    TagBox[
+                    StyleBox[
+                    RowBox[{
+                    UnderoverscriptBox["\[Sum]", "n", "\[Infinity]"], 
+                    TagBox[
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{"n", "+", "1"}], HoldForm]], "n"], HoldForm]}], 
+                    ScriptLevel -> 0, StripOnInput -> False], HoldForm], 
+                    TraditionalForm]}, "RowDefault"], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                  GridBoxSpacings -> {
+                   "Columns" -> {{None}}, "Rows" -> {{0.5}}}], "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"If \"", "\"a \"", "\"function \"", 
+                    TemplateBox[{
+                    RowBox[{"f", "(", "x", ")"}], "\" \""}, "RowDefault"], 
+                    "\"is \"", "\"continuous, \"", "\"positive \"", 
+                    "\"and \"", "\"decreasing, \"", "\"then \"", "\"the \"", 
+                    "\"series \"", 
+                    TemplateBox[{
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    StyleBox[
+                    RowBox[{
+                    UnderoverscriptBox["\[Sum]", 
+                    RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+                    RowBox[{"f", "(", "n", ")"}]}], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], TraditionalForm], 
+                    HoldForm], "\" \""}, "RowDefault"], "\"converges \"", 
+                    "\"if \"", "\"and \"", "\"only \"", "\"if \"", "\"the \"",
+                     "\"corresponding \"", "\"integral \"", 
+                    TemplateBox[{
+                    TagBox[
+                    RowBox[{"\[Rho]", "\[LongEqual]", 
+                    RowBox[{
+                    SubsuperscriptBox["\[Integral]", "1", "\[Infinity]"], 
+                    RowBox[{
+                    RowBox[{"f", "(", "x", ")"}], 
+                    RowBox[{"\[DifferentialD]", "x"}]}]}]}], HoldForm], 
+                    "\" \""}, "RowDefault"], "\"converges\""}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{"\"If \"", "\"the \"", "\"integral \"", 
+                    TemplateBox[{"\[Rho]", "\" \""}, "RowDefault"], 
+                    "\"converges, \"", "\"the \"", "\"series \"", 
+                    "\"converges;\""}, "RowDefault"]}, {
+                    TemplateBox[{"\"if \"", "\"the \"", "\"integral \"", 
+                    TemplateBox[{"\[Rho]", "\" \""}, "RowDefault"], 
+                    "\"diverges, \"", "\"the \"", "\"series \"", 
+                    "\"diverges.\""}, "RowDefault"]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                    "Column", 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Column"]}, "RowDefault"], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"Let \"", 
+                    TemplateBox[{
+                    TagBox[
+                    RowBox[{
+                    RowBox[{"f", "(", "x", ")"}], "\[LongEqual]", 
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{"x", "+", "1"}], HoldForm]], "x"]}], HoldForm], 
+                    "\" \""}, "RowDefault"], "\"and \"", "\"check \"", 
+                    "\"that \"", 
+                    TemplateBox[{
+                    RowBox[{"f", "(", "x", ")"}], "\" \""}, "RowDefault"], 
+                    "\"is \"", "\"continuous, \"", "\"positive \"", 
+                    "\"and \"", "\"decreasing \"", "\"for \"", 
+                    RowBox[{"x", "\[GreaterEqual]", "1"}]}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    StyleBox[
+                    TagBox[
+                    GridBox[{{
+                    TagBox[
+                    PaneBox[
+                    "\"continuous:\"", 
+                    BaseStyle -> {{
+                    BaselinePosition -> Baseline, FontColor -> 
+                    GrayLevel[0.3]}, LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                    $CellContext`TagBoxWrapper["Label"]], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    StyleBox["\"is\"", {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}], "\" \""}, "RowDefault"], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{"x", "+", "1"}], HoldForm]], "x"], "\" \""}, 
+                    "RowDefault"], "\"continuous \""}, "RowDefault"], 
+                    TemplateBox[{
+                    StyleBox["\"for\"", {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}], "\" \""}, "RowDefault"], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    RowBox[{"x", "\[GreaterEqual]", "1"}], "\"?\""}, 
+                    "RowDefault"]}, "RowDefault"]}, "RowDefault"], 
+                    "\"yes\""}, {
+                    TagBox[
+                    PaneBox[
+                    "\"positive:\"", 
+                    BaseStyle -> {{
+                    BaselinePosition -> Baseline, FontColor -> 
+                    GrayLevel[0.3]}, LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                    $CellContext`TagBoxWrapper["Label"]], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    StyleBox["\"is\"", {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}], "\" \""}, "RowDefault"], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    TagBox[
+                    RowBox[{
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{"x", "+", "1"}], HoldForm]], "x"], 
+                    "\[GreaterEqual]", "0"}], HoldForm], "\" \""}, 
+                    "RowDefault"]}, "RowDefault"], 
+                    TemplateBox[{
+                    StyleBox["\"for\"", {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}], "\" \""}, "RowDefault"], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    RowBox[{"x", "\[GreaterEqual]", "1"}], "\"?\""}, 
+                    "RowDefault"]}, "RowDefault"]}, "RowDefault"], 
+                    "\"yes\""}, {
+                    TagBox[
+                    PaneBox[
+                    "\"decreasing:\"", 
+                    BaseStyle -> {{
+                    BaselinePosition -> Baseline, FontColor -> 
+                    GrayLevel[0.3]}, LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                    $CellContext`TagBoxWrapper["Label"]], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    StyleBox["\"is\"", {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}], "\" \""}, "RowDefault"], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "f", "\[Prime]", MultilineFunction -> None], "(", "x", 
+                    ")"}], "\[Equal]", 
+                    TagBox[
+                    RowBox[{
+                    FractionBox["1", 
+                    RowBox[{"2", " ", "x", " ", 
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{"x", "+", "1"}], HoldForm]]}]], "-", 
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    RowBox[{"x", "+", "1"}], HoldForm], TraditionalForm], 
+                    DisplayForm], HoldForm]], 
+                    SuperscriptBox["x", "2"]]}], HoldForm], "<", "0"}], 
+                    "\" \""}, "RowDefault"]}, "RowDefault"], 
+                    TemplateBox[{
+                    StyleBox["\"for\"", {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}], "\" \""}, "RowDefault"], 
+                    TemplateBox[{
+                    TemplateBox[{
+                    RowBox[{"x", "\[GreaterEqual]", "1"}], "\"?\""}, 
+                    "RowDefault"]}, "RowDefault"]}, "RowDefault"], 
+                    "\"yes\""}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {Left, Left, Left}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxBackground -> {"Columns" -> {None, None}}, 
+                    GridBoxFrame -> {
+                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, FrameStyle -> 
+                    GrayLevel[0.84], BaselinePosition -> Automatic, 
+                    AllowScriptLevelChange -> False], "Grid"], 
+                    LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, 
+                    StripOnInput -> False]}, "RowDefault"], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    TemplateBox[{"\"Since \"", 
+                    TemplateBox[{
+                    RowBox[{"f", "(", "x", ")"}], "\" \""}, "RowDefault"], 
+                    "\"is \"", "\"continuous, \"", "\"positive \"", 
+                    "\"and \"", "\"decreasing, \"", "\"the \"", 
+                    "\"integral \"", "\"test \"", "\"can \"", "\"be \"", 
+                    "\"applied. \"", "\"To \"", "\"do \"", "\"so, \"", 
+                    "\"take \"", "\"the \"", "\"integral \"", 
+                    TagBox[
+                    RowBox[{
+                    SubsuperscriptBox["\[Integral]", "1", "\[Infinity]"], 
+                    RowBox[{
+                    RowBox[{"f", "(", "x", ")"}], 
+                    RowBox[{"\[DifferentialD]", "x"}]}]}], HoldForm]}, 
+                    "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    TagBox[
+                    RowBox[{
+                    RowBox[{
+                    SubsuperscriptBox["\[Integral]", "1", "\[Infinity]"], 
+                    RowBox[{
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{"x", "+", "1"}], HoldForm]], "x"], 
+                    RowBox[{"\[DifferentialD]", "x"}]}]}], "\[LongEqual]", 
+                    "\[Infinity]"}], HoldForm]}, "RowDefault"], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\"Since \"", "\"the \"", "\"integral \"", 
+                    TemplateBox[{
+                    TagBox[
+                    RowBox[{
+                    SubsuperscriptBox["\[Integral]", "1", "\[Infinity]"], 
+                    RowBox[{
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{"x", "+", "1"}], HoldForm]], "x"], 
+                    RowBox[{"\[DifferentialD]", "x"}]}]}], HoldForm], 
+                    "\" \""}, "RowDefault"], "\"diverges, \"", "\"the \"", 
+                    "\"series \"", 
+                    TemplateBox[{
+                    TagBox[
+                    FormBox[
+                    TagBox[
+                    StyleBox[
+                    RowBox[{
+                    UnderoverscriptBox["\[Sum]", 
+                    RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+                    FractionBox[
+                    SqrtBox[
+                    TagBox[
+                    RowBox[{"n", "+", "1"}], HoldForm]], "n"]}], ScriptLevel -> 
+                    0, StripOnInput -> False], HoldForm], TraditionalForm], 
+                    HoldForm], "\" \""}, "RowDefault"], "\"diverges.\""}, 
+                    "RowDefault"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    FrameBox[
+                    TagBox[
+                    GridBox[{{
+                    StyleBox[
+                    TemplateBox[{"\"Answer:\""}, "RowDefault"], FontFamily -> 
+                    "Roboto", FontSize -> 12, StripOnInput -> False], 
+                    "\[SpanFromLeft]"}, {"\"\"", 
+                    TagBox[
+                    
+                    TemplateBox[{
+                    "\"The \"", "\"series \"", "\"is \"", "\"divergent \"", 
+                    "\"by \"", "\"the \"", "\"integral \"", "\"test.\""}, 
+                    "RowDefault"], HoldForm]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {2.5, Automatic}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {2, 0, 3}, "Rows" -> {1.5, 1, 2}}, 
+                    AllowScriptLevelChange -> False], "Grid"], FrameStyle -> {
+                    AbsoluteThickness[1], 
+                    RGBColor[0.52, 0.76, 0.86]}, Background -> 
+                    RGBColor[0.91, 0.98, 1], RoundingRadius -> 3, 
+                    FrameMargins -> 12, StripOnInput -> False]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxDividers -> {
+               "Columns" -> {{False}}, "Rows" -> {False, {True}, False}}, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{3}}}, FrameStyle -> 
+              GrayLevel[0.7]], "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement["dataformats", {}, {"plaintext"}]}], 
+     XMLElement["expressiontypes", {"count" -> "2"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Grid"}, {}], "\n   ", 
+       XMLElement["expressiontype", {"name" -> "Grid"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "3"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Hide tests", "input" -> "Result__Hide tests"}, {}], 
+       XMLElement[
+       "statelist", {
+        "count" -> "4", "value" -> "Integral Test", "delimiters" -> ""}, {
+         XMLElement[
+         "state", {
+          "name" -> "Integral Test", "input" -> "Result__Integral Test"}, {}], 
+         XMLElement[
+         "state", {
+          "name" -> "Limit Test (inconclusive)", "input" -> 
+           "Result__Limit Test (inconclusive)"}, {}], 
+         XMLElement[
+         "state", {
+          "name" -> "Ratio Test (inconclusive)", "input" -> 
+           "Result__Ratio Test (inconclusive)"}, {}], 
+         XMLElement[
+         "state", {
+          "name" -> "Root Test (inconclusive)", "input" -> 
+           "Result__Root Test (inconclusive)"}, {}]}], 
+       XMLElement[
+       "state", {
+        "name" -> "Hide steps", "input" -> "Result__Hide steps"}, {}]}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Partial sums", "scanner" -> "Sum", "id" -> 
+     "PartialSums", "position" -> "200", "error" -> "false", "numsubpods" -> 
+     "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {
+        "ListLinePlot[Accumulate[Table[Sqrt[k + 1]/k, {k, 1, 6}]]]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            GraphicsBox[{{}, {{{}, {}, {
+                 Hue[0.67, 0.6, 0.6], 
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]], 
+                 
+                 LineBox[{{1., 1.4142135623730951`}, {2., 
+                  2.2802389661575337`}, {3.0000000000000004`, 
+                  2.9469056328242003`}, {4., 3.5059226271991477`}, {
+                  5.000000000000001, 3.995820575755783}, {6., 
+                  4.436779127599881}}]}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]], 
+                 GeometricTransformationBox[
+                  InsetBox[
+                   BoxData[
+                    FormBox[
+                    StyleBox[
+                    GraphicsBox[{
+                    EdgeForm[], 
+                    DiskBox[{0, 0}]}], 
+                    GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                    AbsoluteThickness[1]]}, StripOnInput -> False], 
+                    TraditionalForm]], {0., 0.}, Automatic, 
+                   NCache[
+                    Offset[
+                    Rational[50, 7]], 
+                    Offset[7.142857142857143]]], {{{1., 
+                  1.4142135623730951`}}, {{2., 2.2802389661575337`}}, {{
+                  3.0000000000000004`, 2.9469056328242003`}}, {{4., 
+                  3.5059226271991477`}}, {{5.000000000000001, 
+                  3.995820575755783}}, {{6., 4.436779127599881}}}]}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]]}, {}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]]}, {}}}, {{}, {}}}, {
+             DisplayFunction -> Identity, DisplayFunction -> Identity, 
+              AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {True, True}, AxesLabel -> {
+                FormBox["k", TraditionalForm], 
+                FormBox[
+                 SubscriptBox["\"S\"", "k"], TraditionalForm]}, 
+              AxesOrigin -> {1., 0.}, AxesStyle -> Directive[
+                AbsoluteThickness[0.2]], BaseStyle -> Automatic, 
+              DisplayFunction :> Identity, 
+              Frame -> {{False, False}, {False, False}}, 
+              FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+              Directive[
+                AbsoluteThickness[0.2]], 
+              FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+              FrameTicksStyle -> 
+              Directive[FontFamily -> "Times", FontSize -> 10], 
+              GridLines -> {None, None}, GridLinesStyle -> Automatic, 
+              ImageSize -> 220., 
+              LabelStyle -> {FontSize -> 10, FontFamily -> "Roboto"}, 
+              Method -> {
+               "OptimizePlotMarkers" -> True, 
+                "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& )}}, 
+              PlotRange -> {{0, 6.}, {0., 4.436779127599881}}, 
+              PlotRangeClipping -> True, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {
+                 Scaled[0.02], 
+                 Scaled[0.05]}}, Prolog -> {
+                Opacity[0], 
+                TagBox[
+                 RectangleBox[
+                  Scaled[{0, 0}], 
+                  Scaled[{1, 1}]], Annotation[#, "Plot", "Frame"]& ]}, 
+              Ticks -> {Automatic, Automatic}, TicksStyle -> 
+              Directive[FontFamily -> "Times", FontSize -> 10]}], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {"minput,computabledata,formatteddata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "More terms", "input" -> "PartialSums__More terms"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "Show points", "input" -> 
+         "PartialSums__Show points"}, {}]}]}], Typeset`aux1$$ = {
+   True, False, {False, False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
+   Typeset`nonpods$$ = {}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> 
+    "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
+    "numpods" -> "2", "datatypes" -> "Sum", "timedout" -> "", "timedoutpods" -> 
+    "", "timing" -> "1.649", "parsetiming" -> "0.613", "parsetimedout" -> 
+    "false", "recalculate" -> "", "id" -> 
+    "MSP188314a3c315c3887fec000020iaa99g5g6gd4ei", "host" -> 
+    "https://www6b3.wolframalpha.com", "server" -> "16", "related" -> 
+    "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa188414a3c315c3887fec000045b5293e5d911f028350669649384844499", "version" -> 
+    "2.6", "inputstring" -> "sum of Sqrt[n + 1]/n from n=1 to \[Infinity]"}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> -5., 
+    "Date" -> {2022, 11, 26, 15, 59, 21.7355329`9.089745224335637}, "Line" -> 
+    482, "SessionID" -> 16944803280185088864}, Typeset`showpods$$ = {1, 2}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
+   Typeset`newq$$ = "sum of Sqrt[n + 1]/n from n=1 to \[Infinity]"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$}, {Typeset`aux1$$, Typeset`aux2$$}, 
+        Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
+        Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
+        Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
+        Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{503., {635.3544921875, 640.6455078125}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$, Typeset`pod2$$}], Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.8784851617824135`*^9},ExpressionUUID->"031140d9-ad18-4bf2-9e3d-\
+c88a49b0063e"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["5.4", "Section",
+ CellChangeTimes->{{3.8784848586220474`*^9, 
+  3.8784848590126295`*^9}},ExpressionUUID->"e1920fd8-e441-465a-8ea5-\
+2ae13f50ce75"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+  RowBox[{"(", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"-", "1"}], ")"}], "i"], 
+     SuperscriptBox["i", "2"]}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"i", "+", "1"}], ")"}], "2"]], ")"}]}]], "Input",
+ CellChangeTimes->{{3.8784851865178275`*^9, 3.8784852063934555`*^9}},
+ CellLabel->
+  "In[483]:=",ExpressionUUID->"c955cc44-ce45-49c4-a2a8-dadcb42a5bd9"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Sum", "div", "\"Sum does not converge.\"", 2, 483, 66, 
+   16944803280185088864, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8784852072059608`*^9},
+ CellLabel->
+  "During evaluation of \
+In[483]:=",ExpressionUUID->"7a87eea4-bc27-49f8-999a-6447d51134aa"],
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"-", "1"}], ")"}], "i"], " ", 
+    SuperscriptBox["i", "2"]}], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"1", "+", "i"}], ")"}], "2"]]}]], "Output",
+ CellChangeTimes->{3.8784852073309574`*^9},
+ CellLabel->
+  "Out[483]=",ExpressionUUID->"b25123fc-c906-4b3e-8f83-6eb216362a0d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"function", "=", 
+  RowBox[{"i", "\[Function]", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"-", "1"}], ")"}], "i"], 
+     SuperscriptBox["i", "2"]}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"i", "+", "1"}], ")"}], "2"]]}]}]], "Input",
+ CellChangeTimes->{{3.878485222993791*^9, 3.8784852288809414`*^9}},
+ CellLabel->
+  "In[485]:=",ExpressionUUID->"045769bd-cb0f-4f0c-998e-b7488567ebdc"],
+
+Cell[BoxData[
+ RowBox[{"Function", "[", 
+  RowBox[{"i", ",", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"-", "1"}], ")"}], "i"], " ", 
+     SuperscriptBox["i", "2"]}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"i", "+", "1"}], ")"}], "2"]]}], "]"}]], "Output",
+ CellChangeTimes->{3.878485229380926*^9},
+ CellLabel->
+  "Out[485]=",ExpressionUUID->"7f74e14e-317e-4085-a5fd-153c4ed1283c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"function", "[", 
+  RowBox[{"Range", "[", "10", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784852302246294`*^9, 3.8784852325058746`*^9}},
+ CellLabel->
+  "In[486]:=",ExpressionUUID->"60b855bd-6092-4e4a-ae48-32e8047e3fa0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", 
+    FractionBox["1", "4"]}], ",", 
+   FractionBox["4", "9"], ",", 
+   RowBox[{"-", 
+    FractionBox["9", "16"]}], ",", 
+   FractionBox["16", "25"], ",", 
+   RowBox[{"-", 
+    FractionBox["25", "36"]}], ",", 
+   FractionBox["36", "49"], ",", 
+   RowBox[{"-", 
+    FractionBox["49", "64"]}], ",", 
+   FractionBox["64", "81"], ",", 
+   RowBox[{"-", 
+    FractionBox["81", "100"]}], ",", 
+   FractionBox["100", "121"]}], "}"}]], "Output",
+ CellChangeTimes->{3.8784852330215073`*^9},
+ CellLabel->
+  "Out[486]=",ExpressionUUID->"4c5bc613-189e-45a1-a3e7-58a365b19fb1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{"function", "[", 
+   RowBox[{"Range", "[", "10", "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.87848523703209*^9, 3.878485243828412*^9}},
+ CellLabel->
+  "In[488]:=",ExpressionUUID->"11044836-05c0-471a-b0c0-b853ad2c5056"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, {}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      NCache[
+       Rational[7, 360], 0.019444444444444445`]], AbsoluteThickness[1.6], 
+     LineBox[{{1., -0.25}, {2., 0.4444444444444444}, {3., -0.5625}, {4., 
+      0.64}, {5., -0.6944444444444444}, {6., 0.7346938775510204}, {
+      7., -0.765625}, {8., 0.7901234567901234}, {9., -0.81}, {10., 
+      0.8264462809917356}}]}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0., 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "DefaultPlotStyle" -> {
+      Directive[
+       RGBColor[0.368417, 0.506779, 0.709798], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.880722, 0.611041, 0.142051], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.560181, 0.691569, 0.194885], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.922526, 0.385626, 0.209179], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.528488, 0.470624, 0.701351], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.772079, 0.431554, 0.102387], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.363898, 0.618501, 0.782349], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[1, 0.75, 0], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.647624, 0.37816, 0.614037], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.571589, 0.586483, 0.], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.915, 0.3325, 0.2125], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.9728288904374106, 0.621644452187053, 0.07336199581899142], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.736782672705901, 0.358, 0.5030266573755369], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965], 
+       AbsoluteThickness[1.6]]}, "DomainPadding" -> Scaled[0.02], 
+    "RangePadding" -> Scaled[0.05], "OptimizePlotMarkers" -> True, 
+    "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0., 10.}, {-0.81, 0.8264462809917356}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.8784852394689255`*^9, 3.8784852442814274`*^9}},
+ CellLabel->
+  "Out[488]=",ExpressionUUID->"72d0242d-7121-4cb0-9756-4158cab3c24e"]
+}, Open  ]],
+
+Cell["It fails the preliminary test.", "Text",
+ CellChangeTimes->{{3.87848524717205*^9, 
+  3.878485252700019*^9}},ExpressionUUID->"ef546e76-3119-4f98-8494-\
+7cb3c2db6c7c"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "sum of ",
+ Cell[BoxData[
+  FractionBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"-", "1"}], ")"}], "i"], 
+    SuperscriptBox["i", "2"]}], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"i", "+", "1"}], ")"}], "2"]]], "Input",
+  CellChangeTimes->{{3.8784851865178275`*^9, 3.8784852063934555`*^9}},
+  ExpressionUUID->"31db6297-b5ce-4a4d-9e68-18c8b5df08c7"],
+ " from i=1 to \[Infinity]"
+}], "WolframAlphaLong",
+ CellChangeTimes->{{3.878485210377841*^9, 3.8784852201656084`*^9}},
+ CellLabel->
+  "In[484]:=",ExpressionUUID->"1f0b1b24-7490-46bf-90cf-94096035efe5"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = 
+   "sum of ((-1)^i i^2)/(i + 1)^2 from i=1 to \[Infinity]", Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}, 
+    PodStates -> {"Result__Step-by-step solution"}}, Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Infinite sum", "scanner" -> "Sum", "id" -> "Result", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "2", "primary" -> 
+     "true"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {"SumConvergence[((-1)^i i^2)/(i + 1)^2, i]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TemplateBox[{
+              TagBox[
+               TagBox[
+                FormBox[
+                 TagBox[
+                  StyleBox[
+                   RowBox[{
+                    UnderoverscriptBox["\[Sum]", 
+                    RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "i"], " ", 
+                    SuperscriptBox["i", "2"]}], 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"i", "+", "1"}], ")"}], "2"]]}], ScriptLevel -> 0,
+                    StripOnInput -> False], HoldForm], TraditionalForm], 
+                HoldForm], PolynomialForm[#, TraditionalOrder -> False]& ], 
+              TemplateBox[{6}, "Spacer1"], "\"diverges\""}, "RowDefault"], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata"}]}], 
+     XMLElement["subpod", {"title" -> "Possible intermediate steps"}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{
+                    "\"Use the limit test to determine the convergence of the \
+series\""}, "RowDefault"], "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    FormBox[
+                    TagBox[
+                    StyleBox[
+                    RowBox[{
+                    UnderoverscriptBox["\[Sum]", "i", "\[Infinity]"], 
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "i"], " ", 
+                    SuperscriptBox["i", "2"]}], 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{"i", "+", "1"}], HoldForm], ")"}], "2"]], 
+                    HoldForm]}], ScriptLevel -> 0, StripOnInput -> False], 
+                    HoldForm], TraditionalForm]}, "RowDefault"], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                  GridBoxSpacings -> {
+                   "Columns" -> {{None}}, "Rows" -> {{0.5}}}], "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{
+                    "\"The \"", "\"convergence \"", "\"of \"", "\"a \"", 
+                    "\"series \"", 
+                    TemplateBox[{
+                    FormBox[
+                    TemplateBox[{
+                    TemplateBox[{
+                    UnderoverscriptBox["\"\[Sum]\"", "i", "\[Infinity]"], 
+                    TemplateBox[{"a", "i"}, "IndexedDefault"]}, 
+                    "RowDefault"]}, "RowDefault"], TraditionalForm], "\" \""},
+                     "RowDefault"], "\"can \"", "\"be \"", "\"determined \"", 
+                    "\"by \"", "\"examining \"", "\"the \"", "\"quantity \"", 
+                    TemplateBox[{
+                    TagBox[
+                    RowBox[{"\[Rho]", "\[LongEqual]", 
+                    StyleBox[
+                    TemplateBox[{
+                    SubscriptBox["a", "i"], "i", "\[Infinity]"}, "Limit2Arg", 
+                    SyntaxForm -> Limit, DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False]}], HoldForm], "\" \""}, 
+                    "RowDefault"], "\"using \"", "\"the \"", "\"following \"",
+                     "\"comparisons\""}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    TagBox[
+                    GridBox[{{
+                    TemplateBox[{"\"If \"", 
+                    TemplateBox[{
+                    RowBox[{
+                    TemplateBox[{"\[Rho]"}, "Abs"], ">", "0"}], "\" \""}, 
+                    "RowDefault"], "\"or \"", "\"if \"", 
+                    TemplateBox[{"\[Rho]", "\" \""}, "RowDefault"], "\"is \"",
+                     "\"undefined, \"", "\"the \"", "\"series \"", 
+                    "\"diverges.\""}, "RowDefault"]}, {
+                    TemplateBox[{"\"If \"", 
+                    TemplateBox[{
+                    RowBox[{"\[Rho]", "\[LongEqual]", "0"}], "\",\"", 
+                    "\" \""}, "RowDefault"], "\"the \"", "\"limit \"", 
+                    "\"test \"", "\"is \"", "\"inconclusive.\""}, 
+                    "RowDefault"]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                    "Column", 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Column"]}, "RowDefault"], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{
+                    "\"Take \"", "\"the \"", "\"limit \"", "\"of \"", 
+                    "\"the \"", "\"summand \"", "\"as \"", 
+                    TemplateBox[{"i", "\" \""}, "RowDefault"], 
+                    "\"approaches \"", "\"\[Infinity]\""}, "RowDefault"], 
+                    "\":\""}, "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    TagBox[
+                    TemplateBox[{
+                    RowBox[{
+                    StyleBox[
+                    TemplateBox[{
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "i"], " ", 
+                    SuperscriptBox["i", "2"]}], 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{"i", "+", "1"}], HoldForm], ")"}], "2"]], "i", 
+                    "\[Infinity]"}, "Limit2Arg", SyntaxForm -> Limit, 
+                    DisplayFunction -> (RowBox[{
+                    TagBox[
+                    UnderscriptBox[
+                    StyleBox["\"lim\"", ShowStringCharacters -> False], 
+                    RowBox[{#2, "\[Rule]", #3}], LimitsPositioning -> True], 
+                    Identity, SyntaxForm -> "\[Limit]", Tooltip -> 
+                    "Limit"], #}]& ), 
+                    InterpretationFunction -> (RowBox[{"Limit", "[", 
+                    RowBox[{#, ",", 
+                    RowBox[{#2, "->", #3}]}], "]"}]& )], ScriptLevel -> 0, 
+                    StripOnInput -> False], "\[LongEqual]", 
+                    "\"(undefined)\""}]}, "RowDefault"], HoldForm]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}, {
+                TagBox[
+                 GridBox[{{
+                    StyleBox[
+                    StyleBox[
+                    TemplateBox[{"\[NoBreak]", "\"\[NoBreak]\"", 
+                    
+                    TemplateBox[{
+                    "\"Since \"", "\"the \"", "\"limit \"", "\"is \"", 
+                    "\"not \"", "\"0, \"", "\"the \"", "\"series \"", 
+                    TemplateBox[{
+                    FormBox[
+                    TemplateBox[{
+                    TemplateBox[{
+                    UnderoverscriptBox["\"\[Sum]\"", "i", "\[Infinity]"], 
+                    TagBox[
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "i"], " ", 
+                    SuperscriptBox["i", "2"]}], 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    TagBox[
+                    RowBox[{"i", "+", "1"}], HoldForm], ")"}], "2"]], 
+                    HoldForm]}, "RowDefault"]}, "RowDefault"], 
+                    TraditionalForm], "\" \""}, "RowDefault"], 
+                    "\"diverges\""}, "RowDefault"], "\":\""}, 
+                    "RowWithSeparators"], 
+                    GrayLevel[0.3], StripOnInput -> False], {
+                    LinebreakAdjustments -> {1, 89, 100, 0, 100}, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {
+                    FrameBox[
+                    TagBox[
+                    GridBox[{{
+                    StyleBox[
+                    TemplateBox[{"\"Answer:\""}, "RowDefault"], FontFamily -> 
+                    "Roboto", FontSize -> 12, StripOnInput -> False], 
+                    "\[SpanFromLeft]"}, {"\"\"", 
+                    TagBox[
+                    
+                    TemplateBox[{
+                    "\"The \"", "\"series \"", "\"is \"", "\"divergent \"", 
+                    "\"by \"", "\"the \"", "\"limit \"", "\"test.\""}, 
+                    "RowDefault"], HoldForm]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {2.5, Automatic}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {2, 0, 3}, "Rows" -> {1.5, 1, 2}}, 
+                    AllowScriptLevelChange -> False], "Grid"], FrameStyle -> {
+                    AbsoluteThickness[1], 
+                    RGBColor[0.52, 0.76, 0.86]}, Background -> 
+                    RGBColor[0.91, 0.98, 1], RoundingRadius -> 3, 
+                    FrameMargins -> 12, StripOnInput -> False]}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  AllowScriptLevelChange -> False, DefaultBaseStyle -> 
+                  "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Column"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxDividers -> {
+               "Columns" -> {{False}}, "Rows" -> {False, {True}, False}}, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{3}}}, FrameStyle -> 
+              GrayLevel[0.7]], "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement["dataformats", {}, {"plaintext"}], 
+       XMLElement["infos", {"count" -> "1"}, {
+         XMLElement["info", {"text" -> "abs(z) is the absolute value of z"}, {
+           XMLElement[
+           "link", {
+            "url" -> "http://reference.wolfram.com/language/ref/Abs.html", 
+             "text" -> "Documentation", "title" -> "Mathematica"}, {}], 
+           XMLElement[
+           "link", {
+            "url" -> "http://functions.wolfram.com/ComplexComponents/Abs", 
+             "text" -> "Properties", "title" -> 
+             "Wolfram Functions Site"}, {}], 
+           XMLElement[
+           "link", {
+            "url" -> "http://mathworld.wolfram.com/AbsoluteValue.html", 
+             "text" -> "Definition", "title" -> "MathWorld"}, {}]}]}]}], 
+     XMLElement["expressiontypes", {"count" -> "2"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n   ", 
+       XMLElement["expressiontype", {"name" -> "Grid"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "3"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Show tests", "input" -> "Result__Show tests"}, {}], 
+       XMLElement[
+       "statelist", {
+        "count" -> "4", "value" -> "Limit Test", "delimiters" -> ""}, {
+         XMLElement[
+         "state", {
+          "name" -> "Limit Test", "input" -> "Result__Limit Test"}, {}], 
+         XMLElement[
+         "state", {
+          "name" -> "Ratio Test (inconclusive)", "input" -> 
+           "Result__Ratio Test (inconclusive)"}, {}], 
+         XMLElement[
+         "state", {
+          "name" -> "Root Test (inconclusive)", "input" -> 
+           "Result__Root Test (inconclusive)"}, {}], 
+         XMLElement[
+         "state", {
+          "name" -> "Integral Test (inconclusive)", "input" -> 
+           "Result__Integral Test (inconclusive)"}, {}]}], 
+       XMLElement[
+       "state", {
+        "name" -> "Hide steps", "input" -> "Result__Hide steps"}, {}]}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Partial sum formula", "scanner" -> "Sum", "id" -> 
+     "PartialSumFormula", "position" -> "200", "error" -> "false", 
+     "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            RowBox[{
+              TagBox[
+               TagBox[
+                FormBox[
+                 TagBox[
+                  StyleBox[
+                   RowBox[{
+                    UnderoverscriptBox["\[Sum]", 
+                    RowBox[{"i", "=", "1"}], "n"], 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "i"], " ", 
+                    SuperscriptBox["i", "2"]}], 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"i", "+", "1"}], ")"}], "2"]]}], ScriptLevel -> 0,
+                    StripOnInput -> False], HoldForm], TraditionalForm], 
+                HoldForm], PolynomialForm[#, TraditionalOrder -> False]& ], 
+              "\[LongEqual]", 
+              RowBox[{
+                FractionBox["1", "12"], " ", 
+                RowBox[{"(", 
+                  RowBox[{
+                    RowBox[{"3", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "n"], " ", 
+                    TemplateBox[{"2", 
+                    FractionBox[
+                    RowBox[{"n", "+", "2"}], "2"], 
+                    RowBox[{
+                    StyleBox[
+                    "IncludeSingularTerm", FontFamily -> "Roboto", 
+                    FontSize -> -1 + Inherited], "\[Rule]", "False"}]}, 
+                    "Zeta2"]}], "-", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "n"], " ", 
+                    TemplateBox[{"2", 
+                    FractionBox[
+                    RowBox[{"n", "+", "3"}], "2"], 
+                    RowBox[{
+                    StyleBox[
+                    "IncludeSingularTerm", FontFamily -> "Roboto", 
+                    FontSize -> -1 + Inherited], "\[Rule]", "False"}]}, 
+                    "Zeta2"]}], "-", 
+                    RowBox[{
+                    RowBox[{"24"}], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "n"], " ", 
+                    TemplateBox[{
+                    RowBox[{"-", "1"}], "1", 
+                    RowBox[{"n", "+", "2"}]}, "LerchPhi"]}], "+", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"-", "1"}], ")"}], "n"]}], "+", 
+                    SuperscriptBox["\[Pi]", "2"], "+", "6", "-", 
+                    RowBox[{"24", " ", 
+                    RowBox[{"log", "(", "2", ")"}]}]}], ")"}]}]}], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["infos", {"count" -> "2"}, {
+       XMLElement[
+       "info", {
+        "text" -> "\[CapitalPhi](x, s, a) is the Lerch transcendent"}, {
+         XMLElement[
+         "link", {
+          "url" -> "http://reference.wolfram.com/language/ref/LerchPhi.html", 
+           "text" -> "Documentation", "title" -> "Mathematica"}, {}], 
+         XMLElement[
+         "link", {
+          "url" -> 
+           "http://functions.wolfram.com/ZetaFunctionsandPolylogarithms/\
+LerchPhi", "text" -> "Properties", "title" -> "Wolfram Functions Site"}, {}], 
+         XMLElement[
+         "link", {
+          "url" -> "http://mathworld.wolfram.com/LerchTranscendent.html", 
+           "text" -> "Definition", "title" -> "MathWorld"}, {}]}], 
+       XMLElement["info", {"text" -> "log(x) is the natural logarithm"}, {
+         XMLElement[
+         "link", {
+          "url" -> "http://reference.wolfram.com/language/ref/Log.html", 
+           "text" -> "Documentation", "title" -> "Mathematica"}, {}], 
+         XMLElement[
+         "link", {
+          "url" -> "http://functions.wolfram.com/ElementaryFunctions/Log", 
+           "text" -> "Properties", "title" -> "Wolfram Functions Site"}, {}], 
+         XMLElement[
+         "link", {
+          "url" -> "http://mathworld.wolfram.com/NaturalLogarithm.html", 
+           "text" -> "Definition", "title" -> "MathWorld"}, {}]}]}]}], 
+   Typeset`pod3$$ = XMLElement[
+   "pod", {"title" -> "Partial sums", "scanner" -> "Sum", "id" -> 
+     "PartialSums", "position" -> "300", "error" -> "false", "numsubpods" -> 
+     "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {
+        "ListLinePlot[Accumulate[Table[((-1)^n n^2)/(n + 1)^2, {n, 1, \
+6}]]]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            GraphicsBox[{{}, {{{}, {}, {
+                 Hue[0.67, 0.6, 0.6], 
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]], 
+                 
+                 LineBox[{{1., -0.25}, {2., 0.19444444444444445`}, {
+                  3.0000000000000004`, -0.3680555555555556}, {4., 
+                  0.27194444444444443`}, {5.000000000000001, -0.4225}, {6., 
+                  0.3121938775510204}}]}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]], 
+                 GeometricTransformationBox[
+                  InsetBox[
+                   BoxData[
+                    FormBox[
+                    StyleBox[
+                    GraphicsBox[{
+                    EdgeForm[], 
+                    DiskBox[{0, 0}]}], 
+                    GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                    AbsoluteThickness[1]]}, StripOnInput -> False], 
+                    TraditionalForm]], {0., 0.}, Automatic, 
+                   NCache[
+                    Offset[
+                    Rational[50, 7]], 
+                    Offset[7.142857142857143]]], {{{1., -0.25}}, {{2., 
+                  0.19444444444444445`}}, {{
+                  3.0000000000000004`, -0.3680555555555556}}, {{4., 
+                  0.27194444444444443`}}, {{5.000000000000001, -0.4225}}, {{
+                  6., 0.3121938775510204}}}]}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]]}, {}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]]}, {}}}, {{}, {}}}, {
+             DisplayFunction -> Identity, DisplayFunction -> Identity, 
+              AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {True, True}, AxesLabel -> {
+                FormBox["n", TraditionalForm], 
+                FormBox[
+                 SubscriptBox["\"S\"", "n"], TraditionalForm]}, 
+              AxesOrigin -> {1., 0.}, AxesStyle -> Directive[
+                AbsoluteThickness[0.2]], BaseStyle -> Automatic, 
+              DisplayFunction :> Identity, 
+              Frame -> {{False, False}, {False, False}}, 
+              FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+              Directive[
+                AbsoluteThickness[0.2]], 
+              FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+              FrameTicksStyle -> 
+              Directive[FontFamily -> "Times", FontSize -> 10], 
+              GridLines -> {None, None}, GridLinesStyle -> Automatic, 
+              ImageSize -> 220., 
+              LabelStyle -> {FontSize -> 10, FontFamily -> "Roboto"}, 
+              Method -> {
+               "OptimizePlotMarkers" -> True, 
+                "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& )}}, 
+              PlotRange -> {{0, 6.}, {-0.4225, 0.3121938775510204}}, 
+              PlotRangeClipping -> True, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {
+                 Scaled[0.05], 
+                 Scaled[0.05]}}, Prolog -> {
+                Opacity[0], 
+                TagBox[
+                 RectangleBox[
+                  Scaled[{0, 0}], 
+                  Scaled[{1, 1}]], Annotation[#, "Plot", "Frame"]& ]}, 
+              Ticks -> {Automatic, Automatic}, TicksStyle -> 
+              Directive[FontFamily -> "Times", FontSize -> 10]}], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {"minput,computabledata,formatteddata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "More terms", "input" -> "PartialSums__More terms"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "Show points", "input" -> 
+         "PartialSums__Show points"}, {}]}]}], Typeset`pod4$$, Typeset`pod5$$,
+    Typeset`pod6$$, Typeset`pod7$$, Typeset`pod8$$, Typeset`pod9$$, 
+   Typeset`pod10$$, Typeset`pod11$$, Typeset`pod12$$, Typeset`pod13$$, 
+   Typeset`pod14$$, Typeset`pod15$$, Typeset`pod16$$, Typeset`pod17$$, 
+   Typeset`pod18$$, Typeset`pod19$$, Typeset`pod20$$, Typeset`pod21$$, 
+   Typeset`pod22$$, Typeset`pod23$$, Typeset`pod24$$, Typeset`pod25$$, 
+   Typeset`pod26$$, Typeset`pod27$$, Typeset`pod28$$, Typeset`pod29$$, 
+   Typeset`pod30$$, Typeset`pod31$$, Typeset`pod32$$, Typeset`pod33$$, 
+   Typeset`aux1$$ = {True, False, {False, False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`aux3$$ = {True, False, {False}, True},
+    Typeset`aux4$$ = {True, False, {False}, True}, Typeset`aux5$$ = {
+   True, False, {False}, True}, Typeset`aux6$$ = {True, False, {False}, True},
+    Typeset`aux7$$ = {True, False, {False}, True}, Typeset`aux8$$ = {
+   True, False, {False}, True}, Typeset`aux9$$ = {True, False, {False}, True},
+    Typeset`aux10$$ = {True, False, {False}, True}, Typeset`aux11$$ = {
+   True, False, {False}, True}, Typeset`aux12$$ = {
+   True, False, {False}, True}, Typeset`aux13$$ = {
+   True, False, {False}, True}, Typeset`aux14$$ = {
+   True, False, {False}, True}, Typeset`aux15$$ = {
+   True, False, {False}, True}, Typeset`aux16$$ = {
+   True, False, {False}, True}, Typeset`aux17$$ = {
+   True, False, {False}, True}, Typeset`aux18$$ = {
+   True, False, {False}, True}, Typeset`aux19$$ = {
+   True, False, {False}, True}, Typeset`aux20$$ = {
+   True, False, {False}, True}, Typeset`aux21$$ = {
+   True, False, {False}, True}, Typeset`aux22$$ = {
+   True, False, {False}, True}, Typeset`aux23$$ = {
+   True, False, {False}, True}, Typeset`aux24$$ = {
+   True, False, {False}, True}, Typeset`aux25$$ = {
+   True, False, {False}, True}, Typeset`aux26$$ = {
+   True, False, {False}, True}, Typeset`aux27$$ = {
+   True, False, {False}, True}, Typeset`aux28$$ = {
+   True, False, {False}, True}, Typeset`aux29$$ = {
+   True, False, {False}, True}, Typeset`aux30$$ = {
+   True, False, {False}, True}, Typeset`aux31$$ = {
+   True, False, {False}, True}, Typeset`aux32$$ = {
+   True, False, {False}, True}, Typeset`aux33$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
+   Typeset`nonpods$$ = {}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], 
+   Typeset`queryinfo$$ = {{
+    "success" -> "true", "error" -> 
+     "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve",
+      "numpods" -> "3", "datatypes" -> "Sum", "timedout" -> "Sum", 
+     "timedoutpods" -> "", "timing" -> "2.4130000000000003", "parsetiming" -> 
+     "0.744", "parsetimedout" -> "false", "recalculate" -> 
+     "https://www6b3.wolframalpha.com/api/v1/recalc.jsp?id=\
+MSPa2316f8395h9h359c6900003b712c8afcefc1408458888475783217078", "id" -> 
+     "MSP2416f8395h9h359c69000043gdhd443dc297i2", "host" -> 
+     "https://www6b3.wolframalpha.com", "server" -> "20", "related" -> 
+     "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa2516f8395h9h359c6900002db4315958bh3g508458888475783217078", "version" -> 
+     "2.6", "inputstring" -> 
+     "sum of ((-1)^i i^2)/(i + 1)^2 from i=1 to \[Infinity]"}, {
+    "success" -> "true", "error" -> 
+     "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve",
+      "numpods" -> "0", "datatypes" -> "Sum", "timedout" -> "", 
+     "timedoutpods" -> "", "timing" -> "1.235", "parsetimedout" -> "false", 
+     "recalculate" -> "", "id" -> "", "parseidserver" -> "6", "host" -> 
+     "https://www6b3.wolframalpha.com", "server" -> "6", "related" -> "", 
+     "version" -> "2.6", "inputstring" -> 
+     "sum of ((-1)^i i^2)/(i + 1)^2 from i=1 to \[Infinity]"}}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> -5., 
+    "Date" -> {2022, 11, 26, 16, 0, 23.6031366`9.125544646242492}, "Line" -> 
+    484, "SessionID" -> 16944803280185088864}, Typeset`showpods$$ = {1, 2, 3},
+    Typeset`failedpods$$ = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
+   18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33}, 
+   Typeset`chosen$$ = {}, Typeset`open$$ = False, Typeset`newq$$ = 
+   "sum of ((-1)^i i^2)/(i + 1)^2 from i=1 to \[Infinity]"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       2, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$, 
+         Typeset`pod5$$, Typeset`pod6$$, Typeset`pod7$$, Typeset`pod8$$, 
+         Typeset`pod9$$, Typeset`pod10$$, Typeset`pod11$$, Typeset`pod12$$, 
+         Typeset`pod13$$, Typeset`pod14$$, Typeset`pod15$$, Typeset`pod16$$, 
+         Typeset`pod17$$, Typeset`pod18$$, Typeset`pod19$$, Typeset`pod20$$, 
+         Typeset`pod21$$, Typeset`pod22$$, Typeset`pod23$$, Typeset`pod24$$, 
+         Typeset`pod25$$, Typeset`pod26$$, Typeset`pod27$$, Typeset`pod28$$, 
+         Typeset`pod29$$, Typeset`pod30$$, Typeset`pod31$$, Typeset`pod32$$, 
+         Typeset`pod33$$}, {
+        Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$, Typeset`aux4$$, 
+         Typeset`aux5$$, Typeset`aux6$$, Typeset`aux7$$, Typeset`aux8$$, 
+         Typeset`aux9$$, Typeset`aux10$$, Typeset`aux11$$, Typeset`aux12$$, 
+         Typeset`aux13$$, Typeset`aux14$$, Typeset`aux15$$, Typeset`aux16$$, 
+         Typeset`aux17$$, Typeset`aux18$$, Typeset`aux19$$, Typeset`aux20$$, 
+         Typeset`aux21$$, Typeset`aux22$$, Typeset`aux23$$, Typeset`aux24$$, 
+         Typeset`aux25$$, Typeset`aux26$$, Typeset`aux27$$, Typeset`aux28$$, 
+         Typeset`aux29$$, Typeset`aux30$$, Typeset`aux31$$, Typeset`aux32$$, 
+         Typeset`aux33$$}, Typeset`chosen$$, Typeset`open$$, 
+        Typeset`elements$$, Typeset`q$$, Typeset`opts$$, Typeset`nonpods$$, 
+        Typeset`queryinfo$$, Typeset`sessioninfo$$, Typeset`showpods$$, 
+        Typeset`failedpods$$, Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{503., {462.3544921875, 467.6455078125}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; AlphaIntegration`DoAsyncInitialization[
+       Hold[{
+        2, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$, 
+          Typeset`pod5$$, Typeset`pod6$$, Typeset`pod7$$, Typeset`pod8$$, 
+          Typeset`pod9$$, Typeset`pod10$$, Typeset`pod11$$, Typeset`pod12$$, 
+          Typeset`pod13$$, Typeset`pod14$$, Typeset`pod15$$, Typeset`pod16$$, 
+          Typeset`pod17$$, Typeset`pod18$$, Typeset`pod19$$, Typeset`pod20$$, 
+          Typeset`pod21$$, Typeset`pod22$$, Typeset`pod23$$, Typeset`pod24$$, 
+          Typeset`pod25$$, Typeset`pod26$$, Typeset`pod27$$, Typeset`pod28$$, 
+          Typeset`pod29$$, Typeset`pod30$$, Typeset`pod31$$, Typeset`pod32$$, 
+          Typeset`pod33$$}, {
+         Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$, Typeset`aux4$$, 
+          Typeset`aux5$$, Typeset`aux6$$, Typeset`aux7$$, Typeset`aux8$$, 
+          Typeset`aux9$$, Typeset`aux10$$, Typeset`aux11$$, Typeset`aux12$$, 
+          Typeset`aux13$$, Typeset`aux14$$, Typeset`aux15$$, Typeset`aux16$$, 
+          Typeset`aux17$$, Typeset`aux18$$, Typeset`aux19$$, Typeset`aux20$$, 
+          Typeset`aux21$$, Typeset`aux22$$, Typeset`aux23$$, Typeset`aux24$$, 
+          Typeset`aux25$$, Typeset`aux26$$, Typeset`aux27$$, Typeset`aux28$$, 
+          Typeset`aux29$$, Typeset`aux30$$, Typeset`aux31$$, Typeset`aux32$$, 
+          Typeset`aux33$$}, Typeset`chosen$$, Typeset`open$$, 
+         Typeset`elements$$, Typeset`q$$, Typeset`opts$$, Typeset`nonpods$$, 
+         Typeset`queryinfo$$, Typeset`sessioninfo$$, Typeset`showpods$$, 
+         Typeset`failedpods$$, Typeset`newq$$, 
+         "https://www6b3.wolframalpha.com/api/v1/recalc.jsp?id=\
+MSPa2316f8395h9h359c6900003b712c8afcefc1408458888475783217078", 
+         Typeset`asyncpods$$}]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.8784852236968527`*^9},ExpressionUUID->"6aac2588-b832-4b2c-87c2-\
+f513e3b95273"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["5.5", "Section",
+ CellChangeTimes->{{3.87848486343459*^9, 
+  3.8784848638252134`*^9}},ExpressionUUID->"360c2aef-4a68-45d6-beb8-\
+91e05d6a3272"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+  FractionBox[
+   RowBox[{"i", "!"}], 
+   RowBox[{
+    RowBox[{"i", "!"}], "+", "1"}]]}]], "Input",
+ CellChangeTimes->{{3.878485266761094*^9, 3.878485279532695*^9}},
+ CellLabel->
+  "In[489]:=",ExpressionUUID->"4fb81919-e137-4780-9532-f9a57b4af549"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Sum", "div", "\"Sum does not converge.\"", 2, 489, 67, 
+   16944803280185088864, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8784852805483503`*^9},
+ CellLabel->
+  "During evaluation of \
+In[489]:=",ExpressionUUID->"1097366f-836d-42d8-bc0b-5150c3e249db"],
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+  FractionBox[
+   RowBox[{"i", "!"}], 
+   RowBox[{"1", "+", 
+    RowBox[{"i", "!"}]}]]}]], "Output",
+ CellChangeTimes->{3.878485280688944*^9},
+ CellLabel->
+  "Out[489]=",ExpressionUUID->"cdd686fd-26d5-4725-97a1-033ef9f0d676"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"function", "=", 
+   RowBox[{"i", "\[Function]", 
+    FractionBox[
+     RowBox[{"i", "!"}], 
+     RowBox[{
+      RowBox[{"i", "!"}], "+", "1"}]]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8784852955429134`*^9, 3.8784853039835*^9}},
+ CellLabel->
+  "In[491]:=",ExpressionUUID->"9896edb5-f10b-47cc-8614-b1899fab3cb2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"function", "[", 
+  RowBox[{"Range", "[", "20", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784853047961197`*^9, 3.878485313667672*^9}},
+ CellLabel->
+  "In[493]:=",ExpressionUUID->"33af7a09-22d0-4365-8bb0-ef0f5c464839"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox["1", "2"], ",", 
+   FractionBox["2", "3"], ",", 
+   FractionBox["6", "7"], ",", 
+   FractionBox["24", "25"], ",", 
+   FractionBox["120", "121"], ",", 
+   FractionBox["720", "721"], ",", 
+   FractionBox["5040", "5041"], ",", 
+   FractionBox["40320", "40321"], ",", 
+   FractionBox["362880", "362881"], ",", 
+   FractionBox["3628800", "3628801"], ",", 
+   FractionBox["39916800", "39916801"], ",", 
+   FractionBox["479001600", "479001601"], ",", 
+   FractionBox["6227020800", "6227020801"], ",", 
+   FractionBox["87178291200", "87178291201"], ",", 
+   FractionBox["1307674368000", "1307674368001"], ",", 
+   FractionBox["20922789888000", "20922789888001"], ",", 
+   FractionBox["355687428096000", "355687428096001"], ",", 
+   FractionBox["6402373705728000", "6402373705728001"], ",", 
+   FractionBox["121645100408832000", "121645100408832001"], ",", 
+   FractionBox["2432902008176640000", "2432902008176640001"]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.8784853080357575`*^9, 3.8784853141208267`*^9}},
+ CellLabel->
+  "Out[493]=",ExpressionUUID->"a4a47c29-5573-4db6-b140-76d7b800d982"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"function", "[", "i", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", "->", "\[Infinity]"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784853392069654`*^9, 3.878485346487441*^9}},
+ CellLabel->
+  "In[494]:=",ExpressionUUID->"378af7b6-d1de-40b8-9066-0d5f0d53a690"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.878485347049939*^9},
+ CellLabel->
+  "Out[494]=",ExpressionUUID->"218ad504-2bf2-4cd0-8ec7-2226eb2b152b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Limit", "[", 
+   RowBox[{
+    RowBox[{"function", "[", "i", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", "->", "\[Infinity]"}], "}"}]}], "]"}], "!=", "0"}]], "Input",
+ CellChangeTimes->{{3.8784853392069654`*^9, 3.878485352073171*^9}},
+ CellLabel->
+  "In[495]:=",ExpressionUUID->"60ccf3b3-f09d-427a-b92d-325b1deb8619"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.8784853526127105`*^9},
+ CellLabel->
+  "Out[495]=",ExpressionUUID->"c276de47-ad25-4ed4-a4ab-8b264e2c63a4"]
+}, Open  ]],
+
+Cell["The function fails the preliminary test.", "Text",
+ CellChangeTimes->{{3.8784853535658693`*^9, 
+  3.878485361329542*^9}},ExpressionUUID->"c2b71344-d4e4-4bb8-9042-\
+36a2370a9071"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "sum of ",
+ Cell[BoxData[
+  FractionBox[
+   RowBox[{"i", "!"}], 
+   RowBox[{
+    RowBox[{"i", "!"}], "+", "1"}]]], "Input",
+  CellChangeTimes->{{3.878485266761094*^9, 3.878485279532695*^9}},
+  ExpressionUUID->"07de6760-1bdb-4f72-bc2d-b2023c2e0149"],
+ " from i=1 to infinity"
+}], "WolframAlphaLong",
+ CellChangeTimes->{{3.8784852821421156`*^9, 3.8784852926989937`*^9}},
+ CellLabel->
+  "In[497]:=",ExpressionUUID->"cfb13b3a-2f3e-4186-bef5-c85dce70df25"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = "sum of i!/(i! + 1) from i=1 to infinity", 
+   Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}, 
+    PodStates -> {"Result__Show tests"}}, Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Infinite sum", "scanner" -> "Sum", "id" -> "Result", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "1", "primary" -> 
+     "true"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["minput", {}, {"SumConvergence[i!/(i! + 1), i]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TemplateBox[{
+                  TagBox[
+                   TagBox[
+                    FormBox[
+                    TagBox[
+                    StyleBox[
+                    RowBox[{
+                    UnderoverscriptBox["\[Sum]", 
+                    RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+                    FractionBox[
+                    RowBox[{"i", "!"}], 
+                    RowBox[{
+                    RowBox[{"i", "!"}], "+", "1"}]]}], ScriptLevel -> 0, 
+                    StripOnInput -> False], HoldForm], TraditionalForm], 
+                    HoldForm], 
+                   PolynomialForm[#, TraditionalOrder -> False]& ], 
+                  TemplateBox[{6}, "Spacer1"], "\"diverges\""}, 
+                 "RowDefault"]}, {
+                StyleBox[
+                 TagBox[
+                  GridBox[{{
+                    TagBox[
+                    PaneBox[
+                    "\"convergence test\"", 
+                    BaseStyle -> {{
+                    BaselinePosition -> Baseline, FontColor -> 
+                    GrayLevel[0.3]}, LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Center}, BaselinePosition -> Baseline], 
+                    $CellContext`TagBoxWrapper["Label"]], 
+                    TagBox[
+                    PaneBox[
+                    "\"result\"", 
+                    BaseStyle -> {{
+                    BaselinePosition -> Baseline, FontColor -> 
+                    GrayLevel[0.3]}, LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Center}, BaselinePosition -> Baseline], 
+                    $CellContext`TagBoxWrapper["Label"]]}, {
+                    "\"limit\"", "\"series diverges\""}, {"\"ratio\"", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"inconclusive\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {"\"root\"", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"inconclusive\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}, {"\"integral\"", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"inconclusive\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}}, GridBoxAlignment -> {
+                    "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}, 
+                    "ItemsIndexed" -> {{1, 1} -> {Center, Baseline}, {1, 
+                    2} -> {Center, Baseline}}}, AutoDelete -> False, 
+                   GridBoxBackground -> {
+                    "Columns" -> {{None}}, "Rows" -> {None, None}}, 
+                   GridBoxFrame -> {
+                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                   GridBoxSpacings -> {
+                    "Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, FrameStyle -> 
+                   GrayLevel[0.84], BaselinePosition -> Automatic, 
+                   AllowScriptLevelChange -> False], "Grid"], 
+                 LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+                 False]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              AllowScriptLevelChange -> False, DefaultBaseStyle -> "Column", 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata"}], 
+       XMLElement["infos", {"count" -> "1"}, {
+         XMLElement["info", {"text" -> "n! is the factorial function"}, {
+           XMLElement[
+           "link", {
+            "url" -> 
+             "http://reference.wolfram.com/language/ref/Factorial.html", 
+             "text" -> "Documentation", "title" -> "Mathematica"}, {}], 
+           XMLElement[
+           "link", {
+            "url" -> "http://functions.wolfram.com/GammaBetaErf/Factorial", 
+             "text" -> "Properties", "title" -> 
+             "Wolfram Functions Site"}, {}], 
+           XMLElement[
+           "link", {
+            "url" -> "http://mathworld.wolfram.com/Factorial.html", "text" -> 
+             "Definition", "title" -> "MathWorld"}, {}]}]}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Grid"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Hide tests", "input" -> "Result__Hide tests"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "Step-by-step solution", "input" -> 
+         "Result__Step-by-step solution", "stepbystep" -> "true"}, {}]}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Partial sums", "scanner" -> "Sum", "id" -> 
+     "PartialSums", "position" -> "200", "error" -> "false", "numsubpods" -> 
+     "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {
+        "ListLinePlot[Accumulate[Table[n!/(n! + 1), {n, 1, 6}]]]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            GraphicsBox[{{}, {{{}, {}, {
+                 Hue[0.67, 0.6, 0.6], 
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]], 
+                 
+                 LineBox[{{1., 0.5}, {2., 1.1666666666666667`}, {
+                  3.0000000000000004`, 2.0238095238095237`}, {4., 
+                  2.9838095238095237`}, {5.000000000000001, 
+                  3.9755450609996066`}, {6., 4.974158098447595}}]}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]], 
+                 GeometricTransformationBox[
+                  InsetBox[
+                   BoxData[
+                    FormBox[
+                    StyleBox[
+                    GraphicsBox[{
+                    EdgeForm[], 
+                    DiskBox[{0, 0}]}], 
+                    GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                    PointSize[0.012833333333333334`], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                    AbsoluteThickness[1]]}, StripOnInput -> False], 
+                    TraditionalForm]], {0., 0.}, Automatic, 
+                   NCache[
+                    Offset[
+                    Rational[50, 7]], 
+                    Offset[7.142857142857143]]], {{{1., 0.5}}, {{2., 
+                  1.1666666666666667`}}, {{3.0000000000000004`, 
+                  2.0238095238095237`}}, {{4., 2.9838095238095237`}}, {{
+                  5.000000000000001, 3.9755450609996066`}}, {{6., 
+                  4.974158098447595}}}]}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]]}, {}}, {{
+                 Directive[
+                  PointSize[0.012833333333333334`], 
+                  RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                  AbsoluteThickness[1]]}, {}}}, {{}, {}}}, {
+             DisplayFunction -> Identity, DisplayFunction -> Identity, 
+              AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {True, True}, AxesLabel -> {
+                FormBox["n", TraditionalForm], 
+                FormBox[
+                 SubscriptBox["\"S\"", "n"], TraditionalForm]}, 
+              AxesOrigin -> {1., 0.}, AxesStyle -> Directive[
+                AbsoluteThickness[0.2]], BaseStyle -> Automatic, 
+              DisplayFunction :> Identity, 
+              Frame -> {{False, False}, {False, False}}, 
+              FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+              Directive[
+                AbsoluteThickness[0.2]], 
+              FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+              FrameTicksStyle -> 
+              Directive[FontFamily -> "Times", FontSize -> 10], 
+              GridLines -> {None, None}, GridLinesStyle -> Automatic, 
+              ImageSize -> 220., 
+              LabelStyle -> {FontSize -> 10, FontFamily -> "Roboto"}, 
+              Method -> {
+               "OptimizePlotMarkers" -> True, 
+                "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& )}}, 
+              PlotRange -> {{0, 6.}, {0., 4.974158098447595}}, 
+              PlotRangeClipping -> True, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {
+                 Scaled[0.02], 
+                 Scaled[0.05]}}, Prolog -> {
+                Opacity[0], 
+                TagBox[
+                 RectangleBox[
+                  Scaled[{0, 0}], 
+                  Scaled[{1, 1}]], Annotation[#, "Plot", "Frame"]& ]}, 
+              Ticks -> {Automatic, Automatic}, TicksStyle -> 
+              Directive[FontFamily -> "Times", FontSize -> 10]}], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {"minput,computabledata,formatteddata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "More terms", "input" -> "PartialSums__More terms"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "Show points", "input" -> 
+         "PartialSums__Show points"}, {}]}]}], Typeset`pod3$$, Typeset`pod4$$,
+    Typeset`pod5$$, Typeset`pod6$$, Typeset`pod7$$, Typeset`pod8$$, 
+   Typeset`pod9$$, Typeset`pod10$$, Typeset`pod11$$, Typeset`pod12$$, 
+   Typeset`pod13$$, Typeset`pod14$$, Typeset`pod15$$, Typeset`pod16$$, 
+   Typeset`pod17$$, Typeset`pod18$$, Typeset`pod19$$, Typeset`pod20$$, 
+   Typeset`pod21$$, Typeset`pod22$$, Typeset`pod23$$, Typeset`pod24$$, 
+   Typeset`pod25$$, Typeset`pod26$$, Typeset`pod27$$, Typeset`pod28$$, 
+   Typeset`pod29$$, Typeset`pod30$$, Typeset`pod31$$, Typeset`pod32$$, 
+   Typeset`aux1$$ = {True, False, {False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`aux3$$ = {True, False, {False}, True},
+    Typeset`aux4$$ = {True, False, {False}, True}, Typeset`aux5$$ = {
+   True, False, {False}, True}, Typeset`aux6$$ = {True, False, {False}, True},
+    Typeset`aux7$$ = {True, False, {False}, True}, Typeset`aux8$$ = {
+   True, False, {False}, True}, Typeset`aux9$$ = {True, False, {False}, True},
+    Typeset`aux10$$ = {True, False, {False}, True}, Typeset`aux11$$ = {
+   True, False, {False}, True}, Typeset`aux12$$ = {
+   True, False, {False}, True}, Typeset`aux13$$ = {
+   True, False, {False}, True}, Typeset`aux14$$ = {
+   True, False, {False}, True}, Typeset`aux15$$ = {
+   True, False, {False}, True}, Typeset`aux16$$ = {
+   True, False, {False}, True}, Typeset`aux17$$ = {
+   True, False, {False}, True}, Typeset`aux18$$ = {
+   True, False, {False}, True}, Typeset`aux19$$ = {
+   True, False, {False}, True}, Typeset`aux20$$ = {
+   True, False, {False}, True}, Typeset`aux21$$ = {
+   True, False, {False}, True}, Typeset`aux22$$ = {
+   True, False, {False}, True}, Typeset`aux23$$ = {
+   True, False, {False}, True}, Typeset`aux24$$ = {
+   True, False, {False}, True}, Typeset`aux25$$ = {
+   True, False, {False}, True}, Typeset`aux26$$ = {
+   True, False, {False}, True}, Typeset`aux27$$ = {
+   True, False, {False}, True}, Typeset`aux28$$ = {
+   True, False, {False}, True}, Typeset`aux29$$ = {
+   True, False, {False}, True}, Typeset`aux30$$ = {
+   True, False, {False}, True}, Typeset`aux31$$ = {
+   True, False, {False}, True}, Typeset`aux32$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
+   Typeset`nonpods$$ = {}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], 
+   Typeset`queryinfo$$ = {{
+    "success" -> "true", "error" -> 
+     "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve",
+      "numpods" -> "2", "datatypes" -> "Sum", "timedout" -> "Sum", 
+     "timedoutpods" -> "", "timing" -> "2.816", "parsetiming" -> "0.62", 
+     "parsetimedout" -> "false", "recalculate" -> 
+     "https://www6b3.wolframalpha.com/api/v1/recalc.jsp?id=\
+MSPa430812970aa0cd869edg00000efficb59a9a57856235443652248981561", "id" -> 
+     "MSP430912970aa0cd869edg000015dgi3g4h0dga6id", "host" -> 
+     "https://www6b3.wolframalpha.com", "server" -> "5", "related" -> 
+     "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa431012970aa0cd869edg00000h5ge7d32d7h2dd56235443652248981561", "version" -> 
+     "2.6", "inputstring" -> "sum of i!/(i! + 1) from i=1 to infinity"}, {
+    "success" -> "true", "error" -> 
+     "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve",
+      "numpods" -> "0", "datatypes" -> "Sum", "timedout" -> "", 
+     "timedoutpods" -> "", "timing" -> "2.174", "parsetimedout" -> "false", 
+     "recalculate" -> "", "id" -> "", "parseidserver" -> "5", "host" -> 
+     "https://www6b3.wolframalpha.com", "server" -> "5", "related" -> "", 
+     "version" -> "2.6", "inputstring" -> 
+     "sum of i!/(i! + 1) from i=1 to infinity"}}, Typeset`sessioninfo$$ = {
+   "TimeZone" -> -5., 
+    "Date" -> {2022, 11, 26, 16, 4, 2.1521969`8.085456985212108}, "Line" -> 
+    497, "SessionID" -> 16944803280185088864}, Typeset`showpods$$ = {1, 2}, 
+   Typeset`failedpods$$ = {3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+   17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32}, 
+   Typeset`chosen$$ = {}, Typeset`open$$ = False, Typeset`newq$$ = 
+   "sum of i!/(i! + 1) from i=1 to infinity"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       2, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$, 
+         Typeset`pod5$$, Typeset`pod6$$, Typeset`pod7$$, Typeset`pod8$$, 
+         Typeset`pod9$$, Typeset`pod10$$, Typeset`pod11$$, Typeset`pod12$$, 
+         Typeset`pod13$$, Typeset`pod14$$, Typeset`pod15$$, Typeset`pod16$$, 
+         Typeset`pod17$$, Typeset`pod18$$, Typeset`pod19$$, Typeset`pod20$$, 
+         Typeset`pod21$$, Typeset`pod22$$, Typeset`pod23$$, Typeset`pod24$$, 
+         Typeset`pod25$$, Typeset`pod26$$, Typeset`pod27$$, Typeset`pod28$$, 
+         Typeset`pod29$$, Typeset`pod30$$, Typeset`pod31$$, 
+         Typeset`pod32$$}, {
+        Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$, Typeset`aux4$$, 
+         Typeset`aux5$$, Typeset`aux6$$, Typeset`aux7$$, Typeset`aux8$$, 
+         Typeset`aux9$$, Typeset`aux10$$, Typeset`aux11$$, Typeset`aux12$$, 
+         Typeset`aux13$$, Typeset`aux14$$, Typeset`aux15$$, Typeset`aux16$$, 
+         Typeset`aux17$$, Typeset`aux18$$, Typeset`aux19$$, Typeset`aux20$$, 
+         Typeset`aux21$$, Typeset`aux22$$, Typeset`aux23$$, Typeset`aux24$$, 
+         Typeset`aux25$$, Typeset`aux26$$, Typeset`aux27$$, Typeset`aux28$$, 
+         Typeset`aux29$$, Typeset`aux30$$, Typeset`aux31$$, Typeset`aux32$$}, 
+        Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
+        Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
+        Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
+        Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{504., {228.3544921875, 233.6455078125}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; AlphaIntegration`DoAsyncInitialization[
+       Hold[{
+        2, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$, 
+          Typeset`pod5$$, Typeset`pod6$$, Typeset`pod7$$, Typeset`pod8$$, 
+          Typeset`pod9$$, Typeset`pod10$$, Typeset`pod11$$, Typeset`pod12$$, 
+          Typeset`pod13$$, Typeset`pod14$$, Typeset`pod15$$, Typeset`pod16$$, 
+          Typeset`pod17$$, Typeset`pod18$$, Typeset`pod19$$, Typeset`pod20$$, 
+          Typeset`pod21$$, Typeset`pod22$$, Typeset`pod23$$, Typeset`pod24$$, 
+          Typeset`pod25$$, Typeset`pod26$$, Typeset`pod27$$, Typeset`pod28$$, 
+          Typeset`pod29$$, Typeset`pod30$$, Typeset`pod31$$, 
+          Typeset`pod32$$}, {
+         Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$, Typeset`aux4$$, 
+          Typeset`aux5$$, Typeset`aux6$$, Typeset`aux7$$, Typeset`aux8$$, 
+          Typeset`aux9$$, Typeset`aux10$$, Typeset`aux11$$, Typeset`aux12$$, 
+          Typeset`aux13$$, Typeset`aux14$$, Typeset`aux15$$, Typeset`aux16$$, 
+          Typeset`aux17$$, Typeset`aux18$$, Typeset`aux19$$, Typeset`aux20$$, 
+          Typeset`aux21$$, Typeset`aux22$$, Typeset`aux23$$, Typeset`aux24$$, 
+          Typeset`aux25$$, Typeset`aux26$$, Typeset`aux27$$, Typeset`aux28$$, 
+          Typeset`aux29$$, Typeset`aux30$$, Typeset`aux31$$, Typeset`aux32$$},
+          Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
+         Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
+         Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
+         Typeset`newq$$, 
+         "https://www6b3.wolframalpha.com/api/v1/recalc.jsp?id=\
+MSPa430812970aa0cd869edg00000efficb59a9a57856235443652248981561", 
+         Typeset`asyncpods$$}]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.8784854423709497`*^9},ExpressionUUID->"65f0d195-a5c3-4f1a-84d8-\
+2e86c9db4752"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["5.6", "Section",
+ CellChangeTimes->{{3.8784848671376247`*^9, 
+  3.8784848675595884`*^9}},ExpressionUUID->"09dc6ae1-51d1-4d53-845b-\
+788bc6ecd13c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+  FractionBox[
+   RowBox[{"i", "!"}], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"i", "+", "1"}], ")"}], "!"}]]}]], "Input",
+ CellChangeTimes->{{3.8784853875981636`*^9, 3.8784854136284933`*^9}},
+ CellLabel->
+  "In[496]:=",ExpressionUUID->"a1fb51df-d58a-420e-8acc-c516b46c34fb"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Sum", "div", "\"Sum does not converge.\"", 2, 496, 68, 
+   16944803280185088864, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878485414097268*^9},
+ CellLabel->
+  "During evaluation of \
+In[496]:=",ExpressionUUID->"70ab6e17-db7b-4747-9c07-21bda0f52117"],
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"i", "=", "1"}], "\[Infinity]"], 
+  FractionBox[
+   RowBox[{"i", "!"}], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "i"}], ")"}], "!"}]]}]], "Output",
+ CellChangeTimes->{3.878485414269097*^9},
+ CellLabel->
+  "Out[496]=",ExpressionUUID->"011f517d-8179-49b5-8794-75fe8b1675e5"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"function", "=", 
+   RowBox[{"i", "\[Function]", 
+    FractionBox[
+     RowBox[{"i", "!"}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"i", "+", "1"}], ")"}], "!"}]]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8784854613251085`*^9, 3.878485475073124*^9}},
+ CellLabel->
+  "In[499]:=",ExpressionUUID->"6cd8603b-f69e-4207-be99-e41a22f84c62"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"function", "[", "i", "]"}], ",", 
+   RowBox[{"i", "->", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784854773856173`*^9, 3.878485488822969*^9}},
+ CellLabel->
+  "In[501]:=",ExpressionUUID->"4b5a5f61-e0a2-4697-8b63-c69e32217334"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.8784854848996305`*^9, 3.878485489385439*^9}},
+ CellLabel->
+  "Out[501]=",ExpressionUUID->"c0fc2d14-2da2-4100-8e92-2361a8ba30a5"]
+}, Open  ]],
+
+Cell["More testing is needed.", "Text",
+ CellChangeTimes->{{3.878485491771017*^9, 
+  3.8784854957553797`*^9}},ExpressionUUID->"a99a9091-24b3-4b8b-9baa-\
+1a872b2338d6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["5.8", "Section",
+ CellChangeTimes->{{3.878484875878193*^9, 
+  3.878484876315694*^9}},ExpressionUUID->"f6cb5bb7-cdbe-45fa-a4b9-\
+1f47cfa249e6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"function", "=", 
+   RowBox[{"i", "\[Function]", 
+    FractionBox[
+     RowBox[{"Log", "[", "i", "]"}], "i"]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.878485500712758*^9, 3.878485514354884*^9}},
+ CellLabel->
+  "In[502]:=",ExpressionUUID->"79a0b67d-87f5-4483-aa8d-08581fd94e72"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"function", "[", "i", "]"}], ",", 
+   RowBox[{"i", "->", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8784855155579777`*^9, 3.878485521066519*^9}},
+ CellLabel->
+  "In[503]:=",ExpressionUUID->"bd625e50-335c-4f05-a1ca-3fa314b8160b"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.8784855214102335`*^9},
+ CellLabel->
+  "Out[503]=",ExpressionUUID->"44d82f9c-8fd5-4048-935c-6bccc2f185d7"]
+}, Open  ]],
+
+Cell["More testing is needed.", "Text",
+ CellChangeTimes->{{3.8784855238804655`*^9, 
+  3.8784855273835964`*^9}},ExpressionUUID->"7c055d5e-e2a8-4ce5-bb71-\
+08b0f84ef116"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["5.9", "Section",
+ CellChangeTimes->{{3.8784848776594677`*^9, 
+  3.8784848780813255`*^9}},ExpressionUUID->"7c1b27f1-0019-414a-a205-\
+c0c6bca18f48"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"function", "=", 
+  RowBox[{
+   FractionBox[
+    SuperscriptBox["3", "#"], 
+    RowBox[{
+     SuperscriptBox["2", "#"], "+", 
+     SuperscriptBox["3", "#"]}]], "&"}]}]], "Input",
+ CellChangeTimes->{{3.8784855305692987`*^9, 3.8784855412976303`*^9}},
+ CellLabel->
+  "In[504]:=",ExpressionUUID->"4c92afd5-ab99-4b33-ada6-e98cc28b496d"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   SuperscriptBox["3", "#1"], 
+   RowBox[{
+    SuperscriptBox["2", "#1"], "+", 
+    SuperscriptBox["3", "#1"]}]], "&"}]], "Output",
+ CellChangeTimes->{3.8784855418444624`*^9},
+ CellLabel->
+  "Out[504]=",ExpressionUUID->"6ac47624-b4d1-45a2-9828-31b31d24b1db"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"function", "[", "n", "]"}], ",", 
+   RowBox[{"n", "->", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.87848554291895*^9, 3.878485550707878*^9}},
+ CellLabel->
+  "In[505]:=",ExpressionUUID->"d8499708-bce2-4ef6-b81a-a40a462e25d0"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.8784855511453767`*^9},
+ CellLabel->
+  "Out[505]=",ExpressionUUID->"03ce0c09-10a7-4683-9bcc-cb2d7921d36b"]
+}, Open  ]],
+
+Cell["The series does not converge.", "Text",
+ CellChangeTimes->{{3.878485552911048*^9, 
+  3.8784855573814974`*^9}},ExpressionUUID->"56c3eb72-5478-43d2-8622-\
+6d46ea71079b"]
+}, Open  ]]
+},
+WindowSize->{574.8, 574.8},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"7ea906b8-42b8-41dd-9d40-2ea880b92903"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 401, 10, 81, "Text",ExpressionUUID->"63707905-a6b7-40fd-9717-805d3eb15799"],
+Cell[CellGroupData[{
+Cell[984, 34, 149, 3, 67, "Section",ExpressionUUID->"5f457aec-0f45-4b08-a918-fa3d28d5f766"],
+Cell[1136, 39, 478, 16, 50, "Input",ExpressionUUID->"71595f38-2524-4128-b508-8defb6fcea3b"],
+Cell[CellGroupData[{
+Cell[1639, 59, 228, 4, 28, "Input",ExpressionUUID->"46c7413b-e242-4199-8dc1-82640fcd0335"],
+Cell[1870, 65, 429, 14, 55, "Output",ExpressionUUID->"599ea5af-a7af-4d49-b379-db9dc4bd2029"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2336, 84, 266, 5, 28, "Input",ExpressionUUID->"26c9ced2-4020-407f-8fb3-f1fa2e5fbeca"],
+Cell[2605, 91, 318, 9, 36, "Output",ExpressionUUID->"f34a9ba6-7f8a-4068-a091-0c7380a71acf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2960, 105, 268, 5, 28, "Input",ExpressionUUID->"3843a302-25f5-46d6-b068-48b42b257478"],
+Cell[3231, 112, 292, 7, 36, "Output",ExpressionUUID->"86dd346a-831c-4bc0-a4cf-ae9c1b28ee2b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3560, 124, 290, 6, 31, "Input",ExpressionUUID->"ca4b68f8-d37a-4d96-8249-c2068c0aa699"],
+Cell[3853, 132, 282, 7, 32, "Output",ExpressionUUID->"7d29624f-510b-440e-832e-a0b95813e56e"]
+}, Open  ]],
+Cell[4150, 142, 309, 9, 50, "Input",ExpressionUUID->"f6959091-5946-43b9-be85-8b1d9e401d09"],
+Cell[CellGroupData[{
+Cell[4484, 155, 247, 5, 28, "Input",ExpressionUUID->"9e8a3dcd-0dcb-449c-b5ec-be7984f4c3e8"],
+Cell[4734, 162, 616, 23, 51, "Output",ExpressionUUID->"0d0c7b6b-a882-4625-bf61-e525827dda1e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5387, 190, 303, 7, 28, "Input",ExpressionUUID->"0fc04708-014d-4312-9197-d5adb44d6dda"],
+Cell[5693, 199, 153, 3, 32, "Output",ExpressionUUID->"edc1f3b4-d2c7-463f-9ae9-caeee96577cd"]
+}, Open  ]],
+Cell[5861, 205, 229, 5, 35, "Text",ExpressionUUID->"442845f7-b779-4e92-8a67-07a23ab4869f"],
+Cell[CellGroupData[{
+Cell[6115, 214, 429, 13, 42, "WolframAlphaLong",ExpressionUUID->"726313be-76df-49c4-aa38-437ec7cf4ab7"],
+Cell[6547, 229, 36464, 743, 1286, "Print",ExpressionUUID->"031140d9-ad18-4bf2-9e3d-c88a49b0063e"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43060, 978, 152, 3, 67, "Section",ExpressionUUID->"e1920fd8-e441-465a-8ea5-2ae13f50ce75"],
+Cell[CellGroupData[{
+Cell[43237, 985, 517, 16, 55, "Input",ExpressionUUID->"c955cc44-ce45-49c4-a2a8-dadcb42a5bd9"],
+Cell[43757, 1003, 313, 8, 28, "Message",ExpressionUUID->"7a87eea4-bc27-49f8-999a-6447d51134aa"],
+Cell[44073, 1013, 465, 15, 58, "Output",ExpressionUUID->"b25123fc-c906-4b3e-8f83-6eb216362a0d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44575, 1033, 465, 14, 52, "Input",ExpressionUUID->"045769bd-cb0f-4f0c-998e-b7488567ebdc"],
+Cell[45043, 1049, 440, 14, 54, "Output",ExpressionUUID->"7f74e14e-317e-4085-a5fd-153c4ed1283c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45520, 1068, 247, 5, 28, "Input",ExpressionUUID->"60b855bd-6092-4e4a-ae48-32e8047e3fa0"],
+Cell[45770, 1075, 618, 20, 48, "Output",ExpressionUUID->"4c5bc613-189e-45a1-a3e7-58a365b19fb1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46425, 1100, 282, 6, 28, "Input",ExpressionUUID->"11044836-05c0-471a-b0c0-b853ad2c5056"],
+Cell[46710, 1108, 3613, 96, 230, "Output",ExpressionUUID->"72d0242d-7121-4cb0-9756-4158cab3c24e"]
+}, Open  ]],
+Cell[50338, 1207, 171, 3, 35, "Text",ExpressionUUID->"ef546e76-3119-4f98-8494-7cb3c2db6c7c"],
+Cell[CellGroupData[{
+Cell[50534, 1214, 605, 18, 44, "WolframAlphaLong",ExpressionUUID->"1f0b1b24-7490-46bf-90cf-94096035efe5"],
+Cell[51142, 1234, 38509, 765, 940, "Print",ExpressionUUID->"6aac2588-b832-4b2c-87c2-f513e3b95273"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[89700, 2005, 149, 3, 67, "Section",ExpressionUUID->"360c2aef-4a68-45d6-beb8-91e05d6a3272"],
+Cell[CellGroupData[{
+Cell[89874, 2012, 349, 10, 53, "Input",ExpressionUUID->"4fb81919-e137-4780-9532-f9a57b4af549"],
+Cell[90226, 2024, 313, 8, 28, "Message",ExpressionUUID->"1097366f-836d-42d8-bc0b-5150c3e249db"],
+Cell[90542, 2034, 326, 10, 57, "Output",ExpressionUUID->"cdd686fd-26d5-4725-97a1-033ef9f0d676"]
+}, Open  ]],
+Cell[90883, 2047, 349, 10, 47, "Input",ExpressionUUID->"9896edb5-f10b-47cc-8614-b1899fab3cb2"],
+Cell[CellGroupData[{
+Cell[91257, 2061, 245, 5, 28, "Input",ExpressionUUID->"33af7a09-22d0-4365-8bb0-ef0f5c464839"],
+Cell[91505, 2068, 1141, 26, 196, "Output",ExpressionUUID->"a4a47c29-5573-4db6-b140-76d7b800d982"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[92683, 2099, 328, 8, 28, "Input",ExpressionUUID->"378af7b6-d1de-40b8-9066-0d5f0d53a690"],
+Cell[93014, 2109, 153, 3, 32, "Output",ExpressionUUID->"218ad504-2bf2-4cd0-8ec7-2226eb2b152b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[93204, 2117, 356, 9, 28, "Input",ExpressionUUID->"60ccf3b3-f09d-427a-b92d-325b1deb8619"],
+Cell[93563, 2128, 158, 3, 32, "Output",ExpressionUUID->"c276de47-ad25-4ed4-a4ab-8b264e2c63a4"]
+}, Open  ]],
+Cell[93736, 2134, 184, 3, 35, "Text",ExpressionUUID->"c2b71344-d4e4-4bb8-9042-36a2370a9071"],
+Cell[CellGroupData[{
+Cell[93945, 2141, 468, 13, 73, "WolframAlphaLong",ExpressionUUID->"cfb13b3a-2f3e-4186-bef5-c85dce70df25"],
+Cell[94416, 2156, 22015, 418, 472, "Print",ExpressionUUID->"65f0d195-a5c3-4f1a-84d8-2e86c9db4752"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[116480, 2580, 152, 3, 67, "Section",ExpressionUUID->"09dc6ae1-51d1-4d53-845b-788bc6ecd13c"],
+Cell[CellGroupData[{
+Cell[116657, 2587, 379, 11, 53, "Input",ExpressionUUID->"a1fb51df-d58a-420e-8acc-c516b46c34fb"],
+Cell[117039, 2600, 311, 8, 28, "Message",ExpressionUUID->"70ab6e17-db7b-4747-9c07-21bda0f52117"],
+Cell[117353, 2610, 352, 11, 57, "Output",ExpressionUUID->"011f517d-8179-49b5-8794-75fe8b1675e5"]
+}, Open  ]],
+Cell[117720, 2624, 379, 11, 49, "Input",ExpressionUUID->"6cd8603b-f69e-4207-be99-e41a22f84c62"],
+Cell[CellGroupData[{
+Cell[118124, 2639, 303, 7, 28, "Input",ExpressionUUID->"4b5a5f61-e0a2-4697-8b63-c69e32217334"],
+Cell[118430, 2648, 179, 3, 32, "Output",ExpressionUUID->"c0fc2d14-2da2-4100-8e92-2361a8ba30a5"]
+}, Open  ]],
+Cell[118624, 2654, 167, 3, 35, "Text",ExpressionUUID->"a99a9091-24b3-4b8b-9baa-1a872b2338d6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[118828, 2662, 148, 3, 67, "Section",ExpressionUUID->"f6cb5bb7-cdbe-45fa-a4b9-1f47cfa249e6"],
+Cell[118979, 2667, 313, 8, 46, "Input",ExpressionUUID->"79a0b67d-87f5-4483-aa8d-08581fd94e72"],
+Cell[CellGroupData[{
+Cell[119317, 2679, 303, 7, 28, "Input",ExpressionUUID->"bd625e50-335c-4f05-a1ca-3fa314b8160b"],
+Cell[119623, 2688, 155, 3, 32, "Output",ExpressionUUID->"44d82f9c-8fd5-4048-935c-6bccc2f185d7"]
+}, Open  ]],
+Cell[119793, 2694, 169, 3, 35, "Text",ExpressionUUID->"7c055d5e-e2a8-4ce5-bb71-08b0f84ef116"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[119999, 2702, 152, 3, 67, "Section",ExpressionUUID->"7c1b27f1-0019-414a-a205-c0c6bca18f48"],
+Cell[CellGroupData[{
+Cell[120176, 2709, 354, 10, 48, "Input",ExpressionUUID->"4c92afd5-ab99-4b33-ada6-e98cc28b496d"],
+Cell[120533, 2721, 297, 9, 51, "Output",ExpressionUUID->"6ac47624-b4d1-45a2-9828-31b31d24b1db"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[120867, 2735, 300, 7, 28, "Input",ExpressionUUID->"d8499708-bce2-4ef6-b81a-a40a462e25d0"],
+Cell[121170, 2744, 155, 3, 32, "Output",ExpressionUUID->"03ce0c09-10a7-4683-9bcc-cb2d7921d36b"]
+}, Open  ]],
+Cell[121340, 2750, 173, 3, 35, "Text",ExpressionUUID->"56c3eb72-5478-43d2-8622-6d46ea71079b"]
+}, Open  ]]
+}
+]
+*)
+
